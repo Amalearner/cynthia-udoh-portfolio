@@ -1,0 +1,942 @@
+{
+  "rings": [
+    {
+      "label": "01 / PEOPLE",
+      "text": "Good work starts with people understanding each other. I help turn a room full of perspectives into a shared direction."
+    },
+    {
+      "label": "02 / PLANS",
+      "text": "A plan should answer three things: what happens next, who owns it, and what they need to move forward."
+    },
+    {
+      "label": "03 / COMMUNICATION",
+      "text": "I turn busy conversations into clear decisions, useful updates, and next steps people can act on."
+    },
+    {
+      "label": "04 / FOLLOW-THROUGH",
+      "text": "The small details matter: the current file, the open question, the handover that makes the next person ready."
+    }
+  ],
+  "stages": [
+    {
+      "symbol": "◎",
+      "title": "Start with the real question.",
+      "description": "Understand the intended outcome, the people involved, and the constraints. A clear brief starts with listening carefully enough to spot what has not been said.",
+      "output": "A SHARED BRIEF"
+    },
+    {
+      "symbol": "↔",
+      "title": "Make the direction shared.",
+      "description": "Bring the scope, deliverables, and open questions into one place. Confirm what success looks like and who needs to make each decision.",
+      "output": "CLEAR OWNERSHIP"
+    },
+    {
+      "symbol": "↗",
+      "title": "Give the work a rhythm.",
+      "description": "Connect tasks to owners and references. Keep reviews focused, consolidate feedback, and make dependencies visible so the team can keep moving.",
+      "output": "VISIBLE NEXT STEPS"
+    },
+    {
+      "symbol": "↳",
+      "title": "Leave the next person ready.",
+      "description": "Organize final deliverables, capture outstanding responsibilities, and prepare a handover the receiving team can actually use.",
+      "output": "A USEFUL HANDOVER"
+    }
+  ],
+  "decks": [
+    {
+      "title": "How do we get there from here?",
+      "label": "01 / THE ROADMAP",
+      "slides": [
+        {
+          "tag": "01 / THE STARTING POINT",
+          "title": "Start with the change.\nThen name the thing.",
+          "note": "A website is a deliverable. What does it need to help someone understand or do?",
+          "cards": [
+            {
+              "label": "THE QUESTION",
+              "text": "What should be different when we’re done?"
+            },
+            {
+              "label": "THE PEOPLE",
+              "text": "Who needs this to work?"
+            },
+            {
+              "label": "THE CONSTRAINT",
+              "text": "What do we already know is fixed?"
+            }
+          ],
+          "footer": "First sketch: an outcome before an output.",
+          "steps": []
+        },
+        {
+          "tag": "02 / A ROUGH ROUTE",
+          "title": "A route.\nNot a crystal ball.",
+          "note": "An illustrative sequence, with review gates instead of invented deadlines.",
+          "steps": [
+            {
+              "text": "Clarify the brief"
+            },
+            {
+              "text": "Gather the inputs"
+            },
+            {
+              "text": "Make a first version"
+            },
+            {
+              "text": "Review the direction"
+            },
+            {
+              "text": "Prepare the handover"
+            }
+          ],
+          "footer": "At each gate: what needs to be true before the next step?",
+          "cards": []
+        },
+        {
+          "tag": "03 / THE MISSING PIECES",
+          "title": "What are we\nwaiting on?",
+          "note": "A visible dependency is easier to discuss than a silent delay.",
+          "cards": [
+            {
+              "label": "INPUT",
+              "text": "The latest copy, files, or access."
+            },
+            {
+              "label": "DECISION",
+              "text": "The person who can approve the direction."
+            },
+            {
+              "label": "CONSEQUENCE",
+              "text": "The next task that cannot start without it."
+            }
+          ],
+          "footer": "Working question: who can help remove the blocker?",
+          "steps": []
+        },
+        {
+          "tag": "04 / ROOM TO CHANGE",
+          "title": "If the brief moves,\nmove the plan deliberately.",
+          "note": "A new request deserves a clear conversation about what it affects.",
+          "steps": [
+            {
+              "text": "Understand the request"
+            },
+            {
+              "text": "Check the agreed scope"
+            },
+            {
+              "text": "Explain the trade-offs"
+            },
+            {
+              "text": "Record the decision"
+            }
+          ],
+          "footer": "A revised plan is useful when everyone is working from it.",
+          "cards": []
+        },
+        {
+          "tag": "05 / THE RECEIVING END",
+          "title": "Don’t just finish.\nMake it usable.",
+          "note": "Sketch the handover from the next person’s point of view.",
+          "cards": [
+            {
+              "label": "FIND",
+              "text": "Can they locate the final files?"
+            },
+            {
+              "label": "UNDERSTAND",
+              "text": "Can they see what is still open?"
+            },
+            {
+              "label": "CONTINUE",
+              "text": "Do they know who owns the next step?"
+            }
+          ],
+          "footer": "A good last page makes the next beginning easier.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "One big brief. A few better questions.",
+      "label": "02 / HOW I THINK",
+      "slides": [
+        {
+          "tag": "01 / BEFORE THE ANSWER",
+          "title": "What is the question\nbehind the request?",
+          "note": "A request tells me what someone wants made. A better conversation tells me why.",
+          "cards": [
+            {
+              "label": "HEAR",
+              "text": "What are they asking for?"
+            },
+            {
+              "label": "ASK",
+              "text": "What prompted the request?"
+            },
+            {
+              "label": "REFRAME",
+              "text": "What does success need to look like?"
+            }
+          ],
+          "footer": "Listen long enough to understand the problem.",
+          "steps": []
+        },
+        {
+          "tag": "02 / SORT THE SIGNAL",
+          "title": "A decision is not\nthe same as an idea.",
+          "note": "Separate the conversation before turning it into tasks.",
+          "cards": [
+            {
+              "label": "DECIDED",
+              "text": "An agreed direction the team can act on."
+            },
+            {
+              "label": "OPEN",
+              "text": "A question still waiting for the right person."
+            },
+            {
+              "label": "EXPLORING",
+              "text": "An idea worth testing, not a commitment."
+            }
+          ],
+          "footer": "Useful labels keep assumptions from becoming instructions.",
+          "steps": []
+        },
+        {
+          "tag": "03 / FIND THE OWNER",
+          "title": "Who moves this\none step forward?",
+          "note": "Responsibility becomes clearer when it is attached to a specific action.",
+          "steps": [
+            {
+              "text": "Name the output"
+            },
+            {
+              "text": "Identify the owner"
+            },
+            {
+              "text": "Attach the reference"
+            },
+            {
+              "text": "Agree the review point"
+            }
+          ],
+          "footer": "One clear next move is better than a vague shared intention.",
+          "cards": []
+        },
+        {
+          "tag": "04 / MAKE IT READABLE",
+          "title": "Different people.\nDifferent context.",
+          "note": "The facts stay consistent. The message meets the reader where they are.",
+          "cards": [
+            {
+              "label": "CLIENT",
+              "text": "What changed and what needs a decision?"
+            },
+            {
+              "label": "CONTRIBUTOR",
+              "text": "What should I make or revise?"
+            },
+            {
+              "label": "PROJECT LEAD",
+              "text": "What does this affect across the work?"
+            }
+          ],
+          "footer": "The right detail is the detail that helps someone act.",
+          "steps": []
+        },
+        {
+          "tag": "05 / CHECK THE THINKING",
+          "title": "Could someone else\npick this up?",
+          "note": "A simple test for a brief, a tracker, or a handover.",
+          "cards": [
+            {
+              "label": "CLEAR?",
+              "text": "Does the next step make sense?"
+            },
+            {
+              "label": "CURRENT?",
+              "text": "Are the links and decisions up to date?"
+            },
+            {
+              "label": "USEFUL?",
+              "text": "Can the person act without reconstructing the conversation?"
+            }
+          ],
+          "footer": "Clarity is something to check, not something to assume.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "Not quite there. Getting closer.",
+      "label": "03 / WORK IN PROGRESS",
+      "slides": [
+        {
+          "tag": "01 / ROUGH VERSION",
+          "title": "“We need to improve\nour updates.”",
+          "note": "Illustrative exercise: turn a broad intention into something a team can test.",
+          "cards": [
+            {
+              "label": "TOO BROAD",
+              "text": "Improve communication."
+            },
+            {
+              "label": "A BETTER QUESTION",
+              "text": "Where do people lose the context they need?"
+            },
+            {
+              "label": "FIRST HYPOTHESIS",
+              "text": "The next action is buried in the update."
+            }
+          ],
+          "footer": "A working hypothesis is a place to begin, not a proven conclusion.",
+          "steps": []
+        },
+        {
+          "tag": "02 / TRY A SMALL CHANGE",
+          "title": "What if every update\nhad a clearer ending?",
+          "note": "A sketch of an update format to try in an appropriate project.",
+          "steps": [
+            {
+              "text": "What changed"
+            },
+            {
+              "text": "Why it matters"
+            },
+            {
+              "text": "Who acts next"
+            },
+            {
+              "text": "What decision is needed"
+            },
+            {
+              "text": "Where the work lives"
+            }
+          ],
+          "footer": "Prototype the habit before making a bigger system.",
+          "cards": []
+        },
+        {
+          "tag": "03 / INVITE A REVIEW",
+          "title": "Does this help the\nperson receiving it?",
+          "note": "The person using the update can reveal what the draft is missing.",
+          "cards": [
+            {
+              "label": "ASK",
+              "text": "What did you need to look for?"
+            },
+            {
+              "label": "NOTICE",
+              "text": "Which parts still needed clarification?"
+            },
+            {
+              "label": "CHECK",
+              "text": "Was the next action understood?"
+            }
+          ],
+          "footer": "Feedback on the process is part of improving the process.",
+          "steps": []
+        },
+        {
+          "tag": "04 / CROSS SOMETHING OUT",
+          "title": "Keep the useful bit.\nRewrite the rest.",
+          "note": "A draft should be allowed to change when the evidence changes.",
+          "cards": [
+            {
+              "label": "KEEP",
+              "text": "The part that made the next action clearer."
+            },
+            {
+              "label": "REMOVE",
+              "text": "Repeated context that obscured the request."
+            },
+            {
+              "label": "REWORK",
+              "text": "The question that still produced confusion."
+            }
+          ],
+          "footer": "Iteration means responding to what you learn.",
+          "steps": []
+        },
+        {
+          "tag": "05 / STILL OPEN",
+          "title": "What would make\nthe next version better?",
+          "note": "An honest work-in-progress page ends with a useful question.",
+          "cards": [
+            {
+              "label": "UNKNOWN",
+              "text": "Will the format work for a different audience?"
+            },
+            {
+              "label": "NEXT TEST",
+              "text": "Adapt the level of detail, keep the same facts."
+            },
+            {
+              "label": "REMINDER",
+              "text": "This is an illustrative exercise, not a reported project result."
+            }
+          ],
+          "footer": "Not finished. Clear enough to keep moving.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "Onboarding: listen before you plan.",
+      "label": "04 / THE FIRST CONVERSATION",
+      "slides": [
+        {
+          "tag": "01 / BEFORE THE CALL",
+          "title": "A blank page.\nSome useful questions.",
+          "note": "Prepare enough context to listen well, without assuming the answer.",
+          "cards": [
+            {
+              "label": "LOOK UP",
+              "text": "What has already been shared: the request, references, current assets."
+            },
+            {
+              "label": "WRITE DOWN",
+              "text": "What is unclear: purpose, audience, timing, ownership."
+            },
+            {
+              "label": "BRING",
+              "text": "A simple agenda: context → goal → constraints → next steps."
+            }
+          ],
+          "footer": "Margin note: don’t let the agenda stop a useful question.",
+          "steps": []
+        },
+        {
+          "tag": "02 / IN THE ROOM",
+          "title": "Listen for the\nproblem underneath.",
+          "note": "Capture what the client means, not only the deliverable they name.",
+          "cards": [
+            {
+              "label": "GOAL",
+              "text": "What should the work help someone understand, feel, or do?"
+            },
+            {
+              "label": "PEOPLE",
+              "text": "Who is the audience? Who contributes? Who decides?"
+            },
+            {
+              "label": "CONSTRAINTS",
+              "text": "What is fixed? What is flexible? Which inputs are missing?"
+            }
+          ],
+          "footer": "Circle the assumptions. Do not turn them into facts.",
+          "steps": []
+        },
+        {
+          "tag": "03 / ROUGH CALL NOTES",
+          "title": "Three piles.\nLess confusion.",
+          "note": "Sort the conversation while the context is still fresh.",
+          "cards": [
+            {
+              "label": "AGREED",
+              "text": "Confirmed decisions, scope boundaries, and responsibilities."
+            },
+            {
+              "label": "OPEN",
+              "text": "Questions awaiting a specific person or missing input."
+            },
+            {
+              "label": "POSSIBLE",
+              "text": "Ideas to explore; not yet promised deliverables."
+            }
+          ],
+          "footer": "Scratch out “we all agreed” unless you can name the decision.",
+          "steps": []
+        },
+        {
+          "tag": "04 / AFTER THE CALL",
+          "title": "Send the version\neveryone can act on.",
+          "note": "A call summary should bridge the conversation and the next action.",
+          "cards": [
+            {
+              "label": "RECAP",
+              "text": "The intended outcome and the decisions made."
+            },
+            {
+              "label": "NEXT",
+              "text": "Actions by person, supporting links, and agreed review dates."
+            },
+            {
+              "label": "CONFIRM",
+              "text": "Ask the relevant people to correct misunderstandings or fill gaps."
+            }
+          ],
+          "footer": "Attach the reference or recording only where appropriate.",
+          "steps": []
+        },
+        {
+          "tag": "05 / READY TO SCOPE?",
+          "title": "Check the starting line.",
+          "note": "The call is complete. The project definition may still need work.",
+          "cards": [
+            {
+              "label": "ENOUGH TO START",
+              "text": "A goal, a point of contact, and a clear scoping task."
+            },
+            {
+              "label": "STILL MISSING",
+              "text": "An asset inventory? Copy? Access? Name the source and owner."
+            },
+            {
+              "label": "NEXT PAGE",
+              "text": "Move into the brief with open questions visibly tracked."
+            }
+          ],
+          "footer": "Output: an agreed summary, not a promise made from incomplete information.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "A brief: a shared direction.",
+      "label": "05 / THE WORKING AGREEMENT",
+      "slides": [
+        {
+          "tag": "01 / THE PURPOSE",
+          "title": "What is this\nwork for?",
+          "note": "Start the brief with the outcome and the audience.",
+          "cards": [
+            {
+              "label": "PURPOSE",
+              "text": "Explain the problem the project should address."
+            },
+            {
+              "label": "AUDIENCE",
+              "text": "Name who will use the work and what they need from it."
+            },
+            {
+              "label": "SUCCESS",
+              "text": "Agree observable acceptance criteria; don’t invent performance claims."
+            }
+          ],
+          "footer": "A deliverable list is necessary. It is not the whole brief.",
+          "steps": []
+        },
+        {
+          "tag": "02 / DRAW THE BOUNDARY",
+          "title": "In. Out.\nStill to decide.",
+          "note": "Make the scope easy to discuss before production begins.",
+          "cards": [
+            {
+              "label": "IN SCOPE",
+              "text": "List deliverables, formats, versions, and agreed review rounds."
+            },
+            {
+              "label": "OUT OF SCOPE",
+              "text": "Record the relevant exclusions so assumptions don’t grow unnoticed."
+            },
+            {
+              "label": "OPEN",
+              "text": "Name what still needs a decision and who can make it."
+            }
+          ],
+          "footer": "Rough edge: “etc.” is not a helpful deliverable.",
+          "steps": []
+        },
+        {
+          "tag": "03 / THE INPUT LIST",
+          "title": "What must arrive\nbefore we can make it?",
+          "note": "Connect each input to the work it enables.",
+          "cards": [
+            {
+              "label": "CONTENT",
+              "text": "Copy, descriptions, imagery, and source material."
+            },
+            {
+              "label": "ACCESS",
+              "text": "Relevant platforms, file permissions, and approved assets."
+            },
+            {
+              "label": "DECISIONS",
+              "text": "Brand direction, format choices, and the final approver."
+            }
+          ],
+          "footer": "No invented dates: agree the input timing with the owner.",
+          "steps": []
+        },
+        {
+          "tag": "04 / THE APPROVAL ROUTE",
+          "title": "Who reviews what?\nAnd when?",
+          "note": "Avoid sending every question to every person.",
+          "cards": [
+            {
+              "label": "DIRECTION",
+              "text": "Who confirms the concept or approach?"
+            },
+            {
+              "label": "DETAIL",
+              "text": "Who checks copy, accuracy, and practical use?"
+            },
+            {
+              "label": "FINAL",
+              "text": "Who has authority to accept the deliverable?"
+            }
+          ],
+          "footer": "One person collecting comments may not be the final approver.",
+          "steps": []
+        },
+        {
+          "tag": "05 / VERSION ONE",
+          "title": "A brief can change.\nThe agreement must stay clear.",
+          "note": "Keep the current brief connected to the project tracker.",
+          "cards": [
+            {
+              "label": "CONFIRM",
+              "text": "Share the brief for the relevant approvals."
+            },
+            {
+              "label": "LINK",
+              "text": "Attach it to the project with the working references."
+            },
+            {
+              "label": "CHANGE",
+              "text": "Record scope updates and their delivery implications."
+            }
+          ],
+          "footer": "Output: a usable brief, clear owners, and a visible list of open inputs.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "Review, revise, and find the current version.",
+      "label": "06 / THE FEEDBACK LOOP",
+      "slides": [
+        {
+          "tag": "01 / BEFORE SHARING",
+          "title": "Make the review\nquestion specific.",
+          "note": "The type of review determines the feedback you need.",
+          "cards": [
+            {
+              "label": "CONTEXT",
+              "text": "What is this version intended to demonstrate?"
+            },
+            {
+              "label": "QUESTION",
+              "text": "Are we reviewing direction, content, execution, or final quality?"
+            },
+            {
+              "label": "LINK",
+              "text": "Share one current version, with the appropriate viewing access."
+            }
+          ],
+          "footer": "Write the question before you write “thoughts?”",
+          "steps": []
+        },
+        {
+          "tag": "02 / GATHER THE SIGNAL",
+          "title": "Many comments.\nOne working list.",
+          "note": "Collect the feedback without erasing the context.",
+          "cards": [
+            {
+              "label": "CAPTURE",
+              "text": "The comment, the relevant section, and its source."
+            },
+            {
+              "label": "GROUP",
+              "text": "Required changes, clarification requests, and optional explorations."
+            },
+            {
+              "label": "LINK",
+              "text": "Connect each point to the version being reviewed."
+            }
+          ],
+          "footer": "Illustrative log: page / comment / decision / owner / status.",
+          "steps": []
+        },
+        {
+          "tag": "03 / THE CONTRADICTION",
+          "title": "These two notes\npull in different directions.",
+          "note": "Resolve the conflict before asking the team to execute.",
+          "cards": [
+            {
+              "label": "SPOT",
+              "text": "Which comments cannot both be followed?"
+            },
+            {
+              "label": "ASK",
+              "text": "What outcome matters most, and who can decide?"
+            },
+            {
+              "label": "RECORD",
+              "text": "Write the agreed direction where the team will find it."
+            }
+          ],
+          "footer": "Do not make the contributor guess which stakeholder to follow.",
+          "steps": []
+        },
+        {
+          "tag": "04 / THE REVISION",
+          "title": "A change list\nsomeone can work from.",
+          "note": "Turn approved direction into specific tasks.",
+          "cards": [
+            {
+              "label": "ASSIGN",
+              "text": "Give each revision an owner and the supporting reference."
+            },
+            {
+              "label": "CHECK",
+              "text": "Review dependent pages, formats, and deliverables affected."
+            },
+            {
+              "label": "UPDATE",
+              "text": "Track changes addressed and questions still open."
+            }
+          ],
+          "footer": "Link each task to the right file rather than a folder of old versions.",
+          "steps": []
+        },
+        {
+          "tag": "05 / CLOSE THE LOOP",
+          "title": "Review again.\nOr move forward.",
+          "note": "Ask for the right decision at the end of the round.",
+          "cards": [
+            {
+              "label": "SUMMARIZE",
+              "text": "What changed since the previous version?"
+            },
+            {
+              "label": "CONFIRM",
+              "text": "What is now approved and what still needs a decision?"
+            },
+            {
+              "label": "PROCEED",
+              "text": "Record approval before moving to dependent work."
+            }
+          ],
+          "footer": "If scope changed, return to the brief—not just another revision round.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "The handoff: leave the next person ready.",
+      "label": "07 / THE RECEIVING END",
+      "slides": [
+        {
+          "tag": "01 / BEFORE PACKAGING",
+          "title": "Start with\nthe receiving team.",
+          "note": "The handover should fit what the next person needs to do.",
+          "cards": [
+            {
+              "label": "CLIENT",
+              "text": "Needs to find final assets and understand how to use them."
+            },
+            {
+              "label": "DEVELOPER",
+              "text": "Needs the relevant files, decisions, and implementation context."
+            },
+            {
+              "label": "PROJECT OWNER",
+              "text": "Needs to see responsibilities, open items, and next steps."
+            }
+          ],
+          "footer": "One package can serve several people if its structure is clear.",
+          "steps": []
+        },
+        {
+          "tag": "02 / THE INVENTORY",
+          "title": "What did we\nagree to deliver?",
+          "note": "Check the final package against the latest approved scope.",
+          "cards": [
+            {
+              "label": "MATCH",
+              "text": "List each agreed deliverable and its final location."
+            },
+            {
+              "label": "VERIFY",
+              "text": "Check exports, file names, formats, and versions."
+            },
+            {
+              "label": "SEPARATE",
+              "text": "Keep superseded drafts out of the final delivery path."
+            }
+          ],
+          "footer": "Cross-check approved scope changes as well as the first brief.",
+          "steps": []
+        },
+        {
+          "tag": "03 / QUALITY + ACCESS",
+          "title": "Click the links.\nActually open the files.",
+          "note": "A finished folder is not enough if the recipient cannot use it.",
+          "cards": [
+            {
+              "label": "ACCESS",
+              "text": "Confirm intended recipients have the appropriate permissions."
+            },
+            {
+              "label": "CONTENT",
+              "text": "Check completeness, naming, and relevant quality criteria."
+            },
+            {
+              "label": "CONTEXT",
+              "text": "Explain essential usage details, dependencies, and limitations."
+            }
+          ],
+          "footer": "A broken link can undo an otherwise thoughtful handover.",
+          "steps": []
+        },
+        {
+          "tag": "04 / WHAT IS STILL OPEN?",
+          "title": "Keep the loose ends\nin plain sight.",
+          "note": "Separate unfinished responsibilities from completed delivery.",
+          "cards": [
+            {
+              "label": "ITEM",
+              "text": "What remains open and why?"
+            },
+            {
+              "label": "OWNER",
+              "text": "Who is responsible for moving it forward?"
+            },
+            {
+              "label": "NEXT STEP",
+              "text": "What action or decision is needed, and when will it be checked?"
+            }
+          ],
+          "footer": "A clean document should not hide an unresolved dependency.",
+          "steps": []
+        },
+        {
+          "tag": "05 / THE COLD-START TEST",
+          "title": "Could you use this\nwithout the meetings?",
+          "note": "Read the handover as someone joining for the first time.",
+          "cards": [
+            {
+              "label": "FIND",
+              "text": "Can you locate the approved final files quickly?"
+            },
+            {
+              "label": "UNDERSTAND",
+              "text": "Can you tell what the package contains and what remains open?"
+            },
+            {
+              "label": "CONTINUE",
+              "text": "Do you know the next action and the appropriate contact?"
+            }
+          ],
+          "footer": "Output: final files + a usable map + visible responsibilities.",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "title": "Close the project. Keep the lesson.",
+      "label": "08 / THE CLOSEOUT",
+      "slides": [
+        {
+          "tag": "01 / CONFIRM COMPLETION",
+          "title": "Done needs\na shared meaning.",
+          "note": "Use the agreed acceptance criteria to close the work.",
+          "cards": [
+            {
+              "label": "DELIVERED",
+              "text": "The latest agreed deliverables are accounted for."
+            },
+            {
+              "label": "ACCEPTED",
+              "text": "Required reviews and decisions are recorded."
+            },
+            {
+              "label": "TRANSFERRED",
+              "text": "The next owner has the information and access needed."
+            }
+          ],
+          "footer": "An internal task status is not always the same as client acceptance.",
+          "steps": []
+        },
+        {
+          "tag": "02 / SAVE THE HISTORY",
+          "title": "Archive the useful\nstory of the work.",
+          "note": "Keep the context someone might reasonably need later.",
+          "cards": [
+            {
+              "label": "FILES",
+              "text": "Approved final deliverables and their source locations."
+            },
+            {
+              "label": "DECISIONS",
+              "text": "Important choices and the context behind them."
+            },
+            {
+              "label": "RESPONSIBILITIES",
+              "text": "Relevant remaining follow-ups and ownership."
+            }
+          ],
+          "footer": "Follow the project’s access and retention requirements.",
+          "steps": []
+        },
+        {
+          "tag": "03 / ASK THE TEAM",
+          "title": "Where did the\nwork get difficult?",
+          "note": "A retrospective should make the next project easier.",
+          "cards": [
+            {
+              "label": "KEEP",
+              "text": "Which habit or tool helped the team deliver?"
+            },
+            {
+              "label": "CHANGE",
+              "text": "Where did ambiguity or repeated friction slow things down?"
+            },
+            {
+              "label": "UNDERSTAND",
+              "text": "What conditions caused the problem, beyond one person’s action?"
+            }
+          ],
+          "footer": "Be specific enough that a process can change.",
+          "steps": []
+        },
+        {
+          "tag": "04 / ONE IMPROVEMENT",
+          "title": "A lesson needs\na next action too.",
+          "note": "Choose a bounded improvement instead of a long list of intentions.",
+          "cards": [
+            {
+              "label": "EXAMPLE",
+              "text": "Add a reviewer field to the task template."
+            },
+            {
+              "label": "OWNER",
+              "text": "Name who will update the template."
+            },
+            {
+              "label": "CHECK",
+              "text": "Review whether it helped on the next appropriate project."
+            }
+          ],
+          "footer": "Illustrative improvement—not a claim about a past result.",
+          "steps": []
+        },
+        {
+          "tag": "05 / TURN THE PAGE",
+          "title": "Carry the learning.\nLeave the clutter.",
+          "note": "Give the next project a clearer starting point.",
+          "cards": [
+            {
+              "label": "REUSE",
+              "text": "The useful brief, review, and handover patterns."
+            },
+            {
+              "label": "ADAPT",
+              "text": "Change the process to fit the next team and goal."
+            },
+            {
+              "label": "REPEAT",
+              "text": "Listen, align, move, close—and keep asking better questions."
+            }
+          ],
+          "footer": "The final sketch becomes the beginning of the next useful version.",
+          "steps": []
+        }
+      ]
+    }
+  ]
+}
