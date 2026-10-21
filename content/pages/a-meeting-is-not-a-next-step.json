@@ -1,0 +1,58 @@
+{
+  "title": "A meeting is not a next step. — Cynthia Udoh",
+  "description": "Turning a good conversation into work someone can actually own. A practical project management field note by Cynthia Udoh.",
+  "section_01": {
+    "visible": true,
+    "text_001": "← All field notes",
+    "link_002": "./notes.html",
+    "text_003": "PROJECT MANAGEMENT / FIELD NOTE 01",
+    "text_004": "A meeting is not a next step.",
+    "text_005": "Turning a good conversation into work someone can actually own.",
+    "text_006": "Cynthia Udoh · 1 min read · Portfolio editorial draft",
+    "text_007": "LET’S MOVE THIS FORWARD.",
+    "text_008": "FIELD NOTE / 01",
+    "text_009": "THE PRACTICE OF MOVING WORK FORWARD"
+  },
+  "section_02": {
+    "visible": true,
+    "text_001": "IN THIS NOTE",
+    "link_002": "#section-1",
+    "text_003": "01",
+    "text_004": " A conversation needs a bridge.",
+    "link_005": "#section-2",
+    "text_006": "02",
+    "text_007": " Name the action, not just the topic.",
+    "link_008": "#section-3",
+    "text_009": "03",
+    "text_010": " Give it an owner and a reference.",
+    "link_011": "#section-4",
+    "text_012": "04",
+    "text_013": " Keep questions visible.",
+    "link_014": "#section-5",
+    "text_015": "05",
+    "text_016": " Try this after your next call."
+  },
+  "section_03": {
+    "visible": true,
+    "text_001": "A conversation needs a bridge.",
+    "text_002": "A productive meeting can still leave a team with very little to act on. People heard the same conversation, but they may have left with different interpretations of the decision. The useful work happens when someone builds a bridge between the conversation and the next action.",
+    "text_003": "Name the action, not just the topic.",
+    "text_004": "“Website feedback” is a topic. “Consolidate homepage feedback into one review document” is an action. The second version tells someone what to do and gives the rest of the team a way to recognize completion.",
+    "text_005": "Give it an owner and a reference.",
+    "text_006": "A task needs one person responsible for moving it forward, even if several people contribute. It also needs the right context: the design link, the feedback thread, or the relevant recording. Without that context, the next step often becomes another request for information.",
+    "text_007": "Keep questions visible.",
+    "text_008": "Not everything needs to become a task immediately. Some points are unresolved questions or decisions waiting on a stakeholder. Labeling them honestly prevents the team from treating an assumption as an agreement.",
+    "text_009": "Try this after your next call.",
+    "text_010": "Write four lines: what we decided, who owns the next action, what they need to do it, and when we will check again. A short, specific summary is often more useful than a complete retelling of the meeting.",
+    "text_011": "Continue on Substack ↗",
+    "link_012": "https://substack.com/@thecynthiaudoh"
+  },
+  "section_04": {
+    "visible": true,
+    "text_001": "KEEP THE THREAD GOING / NOTE 02",
+    "link_002": "./feedback-needs-a-home.html",
+    "text_003": "Good feedback needs a home. ↗",
+    "text_004": "Browse all 10 notes",
+    "link_005": "./notes.html"
+  }
+}
