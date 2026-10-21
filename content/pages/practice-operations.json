@@ -1,0 +1,43 @@
+{
+  "title": "Systems that keep good work moving. — Cynthia Udoh",
+  "description": "Cynthia Udoh is a Lead Project Manager & Communications professional, connecting people, creative work, and clear delivery.",
+  "section_01": {
+    "visible": true,
+    "text_001": "← Back to the work",
+    "link_002": "./work.html",
+    "text_003": "PRACTICE NARRATIVE / PROJECT OPERATIONS",
+    "text_004": "Systems that keep good work moving.",
+    "text_005": "A useful project system gives people a shared view of the work without becoming another project to manage.",
+    "text_006": "LET’S MOVE THIS FORWARD."
+  },
+  "section_02": {
+    "visible": true,
+    "text_001": "MY CONTRIBUTION",
+    "text_002": "Project management",
+    "text_003": "& communications",
+    "text_004": "WORKING OUTPUTS",
+    "text_005": "↗ Shared trackers",
+    "text_006": "↗ Review rhythms",
+    "text_007": "↗ Organized references",
+    "text_008": "↗ Usable handovers",
+    "text_009": "The challenge",
+    "text_010": "Tasks, assets, and decisions can drift apart as a project grows. A tracker is only useful when its status and supporting links match what is happening in the team.",
+    "text_011": "My contribution",
+    "text_012": "I build and maintain project trackers, prepare review rhythms, organize reference links, and assemble handover documents. I support team coordination with clear priorities and follow-through.",
+    "text_013": "The working method",
+    "text_014": "Use consistent statuses, attach relevant files to the task itself, and review open work against meeting decisions. At handover, organize deliverables so the next team can find and use them.",
+    "text_015": "What a useful system looks like",
+    "text_016": "Someone joining the project can understand its current state. A team member can locate the latest reference. The person receiving the handover can continue without reconstructing every conversation.",
+    "text_017": "This working method is illustrated by the named project examples below. Creative execution is credited to the wider project team.",
+    "text_018": "Where this shows up in my work",
+    "text_019": "Substance Fund — see the project contribution ↗",
+    "link_020": "./project-substance-fund.html",
+    "text_021": "Nordic Tech Week — see the project contribution ↗",
+    "link_022": "./project-nordic-tech-week.html",
+    "text_023": "RECOGNIZE THIS CHALLENGE?",
+    "text_024": "Let’s talk about what your team needs.",
+    "text_025": "Share the goal, the current stage, and the part that feels stuck.",
+    "text_026": "Start a project conversation ↗",
+    "link_027": "./contact.html"
+  }
+}
