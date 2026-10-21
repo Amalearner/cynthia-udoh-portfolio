@@ -1,0 +1,58 @@
+{
+  "title": "Handover is a design problem. — Cynthia Udoh",
+  "description": "Making the work useful to the person who inherits it. A practical project management field note by Cynthia Udoh.",
+  "section_01": {
+    "visible": true,
+    "text_001": "← All field notes",
+    "link_002": "./notes.html",
+    "text_003": "OPERATIONS / FIELD NOTE 03",
+    "text_004": "Handover is a design problem.",
+    "text_005": "Making the work useful to the person who inherits it.",
+    "text_006": "Cynthia Udoh · 1 min read · Portfolio editorial draft",
+    "text_007": "LET’S MOVE THIS FORWARD.",
+    "text_008": "FIELD NOTE / 03",
+    "text_009": "THE PRACTICE OF MOVING WORK FORWARD"
+  },
+  "section_02": {
+    "visible": true,
+    "text_001": "IN THIS NOTE",
+    "link_002": "#section-1",
+    "text_003": "01",
+    "text_004": " Delivery is not the end of usability.",
+    "link_005": "#section-2",
+    "text_006": "02",
+    "text_007": " Start with the recipient.",
+    "link_008": "#section-3",
+    "text_009": "03",
+    "text_010": " Design a small map.",
+    "link_011": "#section-4",
+    "text_012": "04",
+    "text_013": " Be honest about what is open.",
+    "link_014": "#section-5",
+    "text_015": "05",
+    "text_016": " Use the cold-start test."
+  },
+  "section_03": {
+    "visible": true,
+    "text_001": "Delivery is not the end of usability.",
+    "text_002": "A handover can contain every promised file and still be difficult to use. If the next person has to search through a message history to understand which version is final, the work is technically present but practically incomplete.",
+    "text_003": "Start with the recipient.",
+    "text_004": "Think about what the next team needs to do. A developer needs relevant files and implementation context. A client needs a clear way to find final assets. A future project manager needs to understand decisions and outstanding responsibilities.",
+    "text_005": "Design a small map.",
+    "text_006": "Use plain labels, group related assets, and connect each link to its purpose. “Final presentation template” is more useful than “Updated file 7.” Explain permissions or usage details where they are necessary.",
+    "text_007": "Be honest about what is open.",
+    "text_008": "A useful handover distinguishes finished work from decisions or inputs still outstanding. It names the person responsible for each remaining step. A tidy document should not hide an unresolved dependency.",
+    "text_009": "Use the cold-start test.",
+    "text_010": "Imagine opening the handover without having attended any project meetings. Can you find the final files? Can you understand the immediate next step? Can you tell who to contact? If those answers are easy, the handover is doing its job.",
+    "text_011": "Continue on Substack ↗",
+    "link_012": "https://substack.com/@thecynthiaudoh"
+  },
+  "section_04": {
+    "visible": true,
+    "text_001": "KEEP THE THREAD GOING / NOTE 04",
+    "link_002": "./the-five-line-project-update.html",
+    "text_003": "The 5-line update people actually read. ↗",
+    "text_004": "Browse all 10 notes",
+    "link_005": "./notes.html"
+  }
+}
