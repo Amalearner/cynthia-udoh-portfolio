@@ -1,0 +1,5892 @@
+media:
+  input: assets
+  output: ./assets
+content:
+- name: site-settings
+  label: Navigation, footer & social links
+  type: file
+  path: content/settings.json
+  format: json
+  fields:
+  - name: header
+    label: Header
+    type: object
+    fields:
+    - name: text_001
+      label: Text · cynthia udoh
+      type: text
+    - name: link_002
+      label: Link destination ·  ®
+      type: string
+    - name: text_003
+      label: Text · ®
+      type: text
+    - name: text_004
+      label: Text · Menu +
+      type: text
+    - name: text_005
+      label: Text · The work
+      type: text
+    - name: link_006
+      label: 'Link destination · '
+      type: string
+    - name: text_007
+      label: Text · The person
+      type: text
+    - name: link_008
+      label: 'Link destination · '
+      type: string
+    - name: text_009
+      label: Text · Sketch decks
+      type: text
+    - name: link_010
+      label: 'Link destination · '
+      type: string
+    - name: text_011
+      label: Text · Field notes
+      type: text
+    - name: link_012
+      label: 'Link destination · '
+      type: string
+    - name: text_013
+      label: Text · Newsletter ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+    - name: text_015
+      label: Text · Let’s talk
+      type: text
+    - name: link_016
+      label: Link destination ·  ↗
+      type: string
+    - name: text_017
+      label: Text · ↗
+      type: text
+  - name: footer
+    label: Footer
+    type: object
+    fields:
+    - name: text_001
+      label: Text · Building a fund brand, a founder platform or your next launch? Le
+      type: text
+    - name: text_002
+      label: Text · GOOD WORK STARTS WITH A CONVERSATION
+      type: text
+    - name: text_003
+      label: Text · Good work starts
+      type: text
+    - name: link_004
+      label: Link destination ·  with a clear next step.  ↗
+      type: string
+    - name: text_005
+      label: Text · with a clear next step.
+      type: text
+    - name: text_006
+      label: Text · ↗
+      type: text
+    - name: text_007
+      label: Text · LinkedIn ↗
+      type: text
+    - name: link_008
+      label: 'Link destination · '
+      type: string
+    - name: text_009
+      label: Text · X ↗
+      type: text
+    - name: link_010
+      label: 'Link destination · '
+      type: string
+    - name: text_011
+      label: Text · Substack ↗
+      type: text
+    - name: link_012
+      label: 'Link destination · '
+      type: string
+    - name: text_013
+      label: Text · © 2026
+      type: text
+- name: interactive-notes
+  label: Ring notes, process & sketch notebooks
+  type: file
+  path: content/interactions.json
+  format: json
+  fields:
+  - name: rings
+    label: Ring popup notes
+    type: object
+    list: true
+    fields: &id001
+    - name: label
+      label: Label
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: stages
+    label: Four delivery stages
+    type: object
+    list: true
+    fields:
+    - name: symbol
+      label: Symbol
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: description
+      label: Description
+      type: text
+    - name: output
+      label: Output label
+      type: string
+  - name: decks
+    label: Sketch notebooks
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Notebook title
+      type: string
+    - name: label
+      label: Label
+      type: string
+    - name: slides
+      label: Sketches
+      type: object
+      list: true
+      fields:
+      - name: tag
+        label: Sketch label
+        type: string
+      - name: title
+        label: Heading (line breaks allowed)
+        type: text
+      - name: note
+        label: Description
+        type: text
+      - name: footer
+        label: Margin note
+        type: text
+      - name: cards
+        label: Cards
+        type: object
+        list: true
+        fields: *id001
+      - name: steps
+        label: Roadmap steps
+        type: object
+        list: true
+        fields:
+        - name: text
+          label: Step
+          type: text
+- name: page-a-meeting-is-not-a-next-step
+  label: A meeting is not a next step.
+  type: file
+  path: content/pages/a-meeting-is-not-a-next-step.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: A meeting is not a next step.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · PROJECT MANAGEMENT / FIELD NOTE 01
+      type: text
+    - name: text_004
+      label: Heading · A meeting is not a next step.
+      type: text
+    - name: text_005
+      label: Text · Turning a good conversation into work someone can actually own.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 1 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 01
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  A conversation needs a bridge.
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · A conversation needs a bridge.
+      type: text
+    - name: link_005
+      label: Link destination · 02  Name the action, not just the t
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · Name the action, not just the topic.
+      type: text
+    - name: link_008
+      label: Link destination · 03  Give it an owner and a referenc
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · Give it an owner and a reference.
+      type: text
+    - name: link_011
+      label: Link destination · 04  Keep questions visible.
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · Keep questions visible.
+      type: text
+    - name: link_014
+      label: Link destination · 05  Try this after your next call.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · Try this after your next call.
+      type: text
+  - name: section_03
+    label: A conversation needs a bridge.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · A conversation needs a bridge.
+      type: text
+    - name: text_002
+      label: Text · A productive meeting can still leave a team with very little to a
+      type: text
+    - name: text_003
+      label: Heading · Name the action, not just the topic.
+      type: text
+    - name: text_004
+      label: Text · “Website feedback” is a topic. “Consolidate homepage feedback int
+      type: text
+    - name: text_005
+      label: Heading · Give it an owner and a reference.
+      type: text
+    - name: text_006
+      label: Text · A task needs one person responsible for moving it forward, even i
+      type: text
+    - name: text_007
+      label: Heading · Keep questions visible.
+      type: text
+    - name: text_008
+      label: Text · Not everything needs to become a task immediately. Some points ar
+      type: text
+    - name: text_009
+      label: Heading · Try this after your next call.
+      type: text
+    - name: text_010
+      label: 'Text · Write four lines: what we decided, who owns the next action, what'
+      type: text
+    - name: text_011
+      label: Text · Continue on Substack ↗
+      type: text
+    - name: link_012
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: Good feedback needs a home. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 02
+      type: text
+    - name: link_002
+      label: Link destination · Good feedback needs a home. ↗
+      type: string
+    - name: text_003
+      label: Heading · Good feedback needs a home. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-about
+  label: The person
+  type: file
+  path: content/pages/about.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: I care about the work. And the people making it happen.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE PERSON BEHIND THE PROCESS
+      type: text
+    - name: text_002
+      label: Heading · I care about the work.
+      type: text
+    - name: text_003
+      label: Text · And the people
+      type: text
+    - name: text_004
+      label: Text · making it happen.
+      type: text
+    - name: text_005
+      label: Text · I’m Cynthia Udoh, a project manager and communicator who enjoys m
+      type: text
+    - name: text_006
+      label: 'Text · At Tony & Co, I manage projects and communications across brand, '
+      type: text
+    - name: text_007
+      label: Text · Find the overlap with your team ↗
+      type: text
+    - name: link_008
+      label: 'Link destination · '
+      type: string
+    - name: image_src_009
+      label: Image
+      type: image
+    - name: image_alt_010
+      label: Image description
+      type: string
+    - name: text_011
+      label: Text · CYNTHIA UDOH / ALWAYS CONNECTING THE DOTS
+      type: text
+    - name: text_012
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: From an ambitious plan to a coordinated delivery.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · YOUR TEAM HAS THE TOOLS. THE WORK STILL NEEDS ALIGNMENT.
+      type: text
+    - name: text_002
+      label: Heading · From an ambitious plan
+      type: text
+    - name: text_003
+      label: Text · to a coordinated delivery.
+      type: text
+    - name: text_004
+      label: 'Text · For VC teams, founders and the creative partners supporting them:'
+      type: text
+    - name: link_005
+      label: Link destination · 01 Define the outcome Agree the bri
+      type: string
+    - name: text_006
+      label: Text · 01
+      type: text
+    - name: text_007
+      label: Text · Define the outcome
+      type: text
+    - name: text_008
+      label: 'Text · Agree the brief, audience, deliverables and decisions before the '
+      type: text
+    - name: text_009
+      label: Text · Explore the delivery process ↗
+      type: text
+    - name: link_010
+      label: Link destination · 02 Connect the team Give designers,
+      type: string
+    - name: text_011
+      label: Text · 02
+      type: text
+    - name: text_012
+      label: Text · Connect the team
+      type: text
+    - name: text_013
+      label: Text · Give designers, developers and content contributors clear owners,
+      type: text
+    - name: text_014
+      label: Text · Explore the delivery process ↗
+      type: text
+    - name: link_015
+      label: Link destination · 03 Keep decisions moving Bring feed
+      type: string
+    - name: text_016
+      label: Text · 03
+      type: text
+    - name: text_017
+      label: Text · Keep decisions moving
+      type: text
+    - name: text_018
+      label: Text · Bring feedback into one place, flag blockers and make the next ac
+      type: text
+    - name: text_019
+      label: Text · Explore the delivery process ↗
+      type: text
+    - name: link_020
+      label: Link destination · 04 Make the handover useful Organiz
+      type: string
+    - name: text_021
+      label: Text · 04
+      type: text
+    - name: text_022
+      label: Text · Make the handover useful
+      type: text
+    - name: text_023
+      label: Text · Organize final files, receiving-team context and any remaining re
+      type: text
+    - name: text_024
+      label: Text · Explore the delivery process ↗
+      type: text
+  - name: section_03
+    label: Structure, with room for people.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · WHAT I BRING
+      type: text
+    - name: text_002
+      label: Heading · Structure, with
+      type: text
+    - name: text_003
+      label: Text · room for people.
+      type: text
+    - name: text_004
+      label: Text · NOW
+      type: text
+    - name: text_005
+      label: Heading · Lead Project Manager & Communications · Tony & Co
+      type: text
+    - name: text_006
+      label: Text · I coordinate creative projects across brand, websites, video, mot
+      type: text
+    - name: text_007
+      label: Text · MY FOUNDATION
+      type: text
+    - name: text_008
+      label: Heading · Community & writing
+      type: text
+    - name: text_009
+      label: Text · Community management and newsletter writing inform how I communic
+      type: text
+    - name: text_010
+      label: Text · MY CURIOSITY
+      type: text
+    - name: text_011
+      label: Heading · Open source. Venture. Better ways to work.
+      type: text
+    - name: text_012
+      label: Text · I’m interested in how communities and ambitious teams build toget
+      type: text
+  - name: section_04
+    label: section quote-section
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY WORKING PHILOSOPHY
+      type: text
+    - name: text_002
+      label: Text · “People do better work when they know where they’re going, what t
+      type: text
+    - name: text_003
+      label: Text · A principle I bring to the way I manage projects.
+      type: text
+- name: page-closing-the-loop
+  label: Done is a conversation, too.
+  type: file
+  path: content/pages/closing-the-loop.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Done is a conversation, too.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · OPERATIONS / FIELD NOTE 09
+      type: text
+    - name: text_004
+      label: Heading · Done is a conversation, too.
+      type: text
+    - name: text_005
+      label: Text · 5 checks that make project closeout more useful.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 1 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 09
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / Confirm the agreed deliver
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / Confirm the agreed deliverables.
+      type: text
+    - name: link_005
+      label: Link destination · 02  02 / Check the receiving experi
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / Check the receiving experience.
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / Separate open items from c
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / Separate open items from completed work.
+      type: text
+    - name: link_011
+      label: Link destination · 04  04 / Preserve the useful histor
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · 04 / Preserve the useful history.
+      type: text
+    - name: link_014
+      label: Link destination · 05  05 / Capture one improvement.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · 05 / Capture one improvement.
+      type: text
+  - name: section_03
+    label: 01 / Confirm the agreed deliverables.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / Confirm the agreed deliverables.
+      type: text
+    - name: text_002
+      label: Text · Compare the final package with the latest agreed scope. Review ap
+      type: text
+    - name: text_003
+      label: Heading · 02 / Check the receiving experience.
+      type: text
+    - name: text_004
+      label: 'Text · Open the handover links, confirm the correct versions, and check '
+      type: text
+    - name: text_005
+      label: Heading · 03 / Separate open items from completed work.
+      type: text
+    - name: text_006
+      label: Text · State any remaining inputs, decisions, or follow-ups clearly. Ass
+      type: text
+    - name: text_007
+      label: Heading · 04 / Preserve the useful history.
+      type: text
+    - name: text_008
+      label: Text · Keep approved files, key decisions, and relevant context in an or
+      type: text
+    - name: text_009
+      label: Heading · 05 / Capture one improvement.
+      type: text
+    - name: text_010
+      label: Text · Ask what made the work easier and what repeatedly slowed it down.
+      type: text
+    - name: text_011
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_012
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_013
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: What community work teaches you about delivery. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 10
+      type: text
+    - name: link_002
+      label: Link destination · What community work teaches you abo
+      type: string
+    - name: text_003
+      label: Heading · What community work teaches you about delivery. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-community-thinking-for-project-managers
+  label: What community work teaches you about delivery.
+  type: file
+  path: content/pages/community-thinking-for-project-managers.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: What community work teaches you about delivery.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · COMMUNITY / FIELD NOTE 10
+      type: text
+    - name: text_004
+      label: Heading · What community work teaches you about delivery.
+      type: text
+    - name: text_005
+      label: Text · 3 habits that help teams feel informed, involved, and able to con
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 2 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 10
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / Give people a clear way in
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / Give people a clear way in.
+      type: text
+    - name: link_005
+      label: 'Link destination · 02  02 / Build a rhythm people can '
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / Build a rhythm people can recognize.
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / Notice the friction in par
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / Notice the friction in participation.
+      type: text
+    - name: link_011
+      label: Link destination · 04  Make contribution visible.
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · Make contribution visible.
+      type: text
+    - name: link_014
+      label: Link destination · 05  Bring the human context into th
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · Bring the human context into the system.
+      type: text
+  - name: section_03
+    label: 01 / Give people a clear way in.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / Give people a clear way in.
+      type: text
+    - name: text_002
+      label: 'Text · Communities grow stronger when newcomers can understand where to '
+      type: text
+    - name: text_003
+      label: Heading · 02 / Build a rhythm people can recognize.
+      type: text
+    - name: text_004
+      label: Text · A predictable communication rhythm makes participation easier. Pe
+      type: text
+    - name: text_005
+      label: Heading · 03 / Notice the friction in participation.
+      type: text
+    - name: text_006
+      label: 'Text · When someone is quiet or a task has stalled, ask what is getting '
+      type: text
+    - name: text_007
+      label: Heading · Make contribution visible.
+      type: text
+    - name: text_008
+      label: Text · Credit the people doing the work and connect their contribution t
+      type: text
+    - name: text_009
+      label: Heading · Bring the human context into the system.
+      type: text
+    - name: text_010
+      label: Text · Good systems help people collaborate. They make expectations visi
+      type: text
+    - name: text_011
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_012
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_013
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: A meeting is not a next step. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 01
+      type: text
+    - name: link_002
+      label: Link destination · A meeting is not a next step. ↗
+      type: string
+    - name: text_003
+      label: Heading · A meeting is not a next step. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-contact
+  label: Contact
+  type: file
+  path: content/pages/contact.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Tell me what needs to move forward.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · START A CONVERSATION
+      type: text
+    - name: text_002
+      label: Heading · Tell me what needs
+      type: text
+    - name: text_003
+      label: Text · to move forward.
+      type: text
+    - name: text_004
+      label: 'Text · Your fund brand is evolving. Your founder platform is launching. '
+      type: text
+    - name: text_005
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: Bring the brief. Or the first question.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: link_001
+      label: 'Link destination · 01 / HAVE A PROJECT IN MIND? Bring '
+      type: string
+    - name: text_002
+      label: Text · 01 / HAVE A PROJECT IN MIND?
+      type: text
+    - name: text_003
+      label: Heading · Bring the brief.
+      type: text
+    - name: text_004
+      label: Text · Or the first question.
+      type: text
+    - name: text_005
+      label: Text · Tell me the goal, where things stand, and the support you have in
+      type: text
+    - name: text_006
+      label: Text · Start by email ↗
+      type: text
+    - name: link_007
+      label: Link destination · 02 / EXPLORING A ROLE OR CONNECTION
+      type: string
+    - name: text_008
+      label: Text · 02 / EXPLORING A ROLE OR CONNECTION?
+      type: text
+    - name: text_009
+      label: Heading · Let’s find
+      type: text
+    - name: text_010
+      label: Text · the overlap.
+      type: text
+    - name: text_011
+      label: Text · Connect with me about project management, communications, and wor
+      type: text
+    - name: text_012
+      label: Text · Connect on LinkedIn ↗
+      type: text
+  - name: section_03
+    label: section contact-direct
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · PREFER A DIRECT ADDRESS?
+      type: text
+    - name: text_002
+      label: Text · udohosarumwensecynthia@gmail.com ↗
+      type: text
+    - name: link_003
+      label: 'Link destination · '
+      type: string
+    - name: text_004
+      label: Text · I’m currently Lead Project Manager & Communications. We can discu
+      type: text
+- name: page-feedback-needs-a-home
+  label: Good feedback needs a home.
+  type: file
+  path: content/pages/feedback-needs-a-home.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Good feedback needs a home.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · COMMUNICATIONS / FIELD NOTE 02
+      type: text
+    - name: text_004
+      label: Heading · Good feedback needs a home.
+      type: text
+    - name: text_005
+      label: Text · A practical argument for one clear place to make decisions.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 1 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 02
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  Scattered feedback creates invi
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · Scattered feedback creates invisible work.
+      type: text
+    - name: link_005
+      label: Link destination · 02  Choose one review home.
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · Choose one review home.
+      type: text
+    - name: link_008
+      label: Link destination · 03  Separate preference from a prob
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · Separate preference from a problem.
+      type: text
+    - name: link_011
+      label: Link destination · 04  Resolve contradictions before e
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · Resolve contradictions before execution.
+      type: text
+    - name: link_014
+      label: Link destination · 05  Close the loop.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · Close the loop.
+      type: text
+  - name: section_03
+    label: Scattered feedback creates invisible work.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · Scattered feedback creates invisible work.
+      type: text
+    - name: text_002
+      label: Text · One comment arrives in a call. Another sits under an old design l
+      type: text
+    - name: text_003
+      label: Heading · Choose one review home.
+      type: text
+    - name: text_004
+      label: 'Text · Bring feedback into one agreed place and connect it to the right '
+      type: text
+    - name: text_005
+      label: Heading · Separate preference from a problem.
+      type: text
+    - name: text_006
+      label: Text · “Make this stronger” tells the team very little. Is the hierarchy
+      type: text
+    - name: text_007
+      label: Heading · Resolve contradictions before execution.
+      type: text
+    - name: text_008
+      label: Text · When two comments pull in different directions, do not quietly pa
+      type: text
+    - name: text_009
+      label: Heading · Close the loop.
+      type: text
+    - name: text_010
+      label: Text · When a round of feedback has been addressed, summarize the change
+      type: text
+    - name: text_011
+      label: Text · Continue on Substack ↗
+      type: text
+    - name: link_012
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: Handover is a design problem. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 03
+      type: text
+    - name: link_002
+      label: Link destination · Handover is a design problem. ↗
+      type: string
+    - name: text_003
+      label: Heading · Handover is a design problem. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-four-questions-before-kickoff
+  label: 4 questions before you call it a brief.
+  type: file
+  path: content/pages/four-questions-before-kickoff.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: 4 questions before you call it a brief.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · PROJECT MANAGEMENT / FIELD NOTE 06
+      type: text
+    - name: text_004
+      label: Heading · 4 questions before you call it a brief.
+      type: text
+    - name: text_005
+      label: Text · The small conversation that gives a project a stronger start.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 2 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 06
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / What should be different w
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / What should be different when this is done?
+      type: text
+    - name: link_005
+      label: Link destination · 02  02 / Who needs to use or approv
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / Who needs to use or approve the work?
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / What is already fixed?
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / What is already fixed?
+      type: text
+    - name: link_011
+      label: Link destination · 04  04 / What is missing?
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · 04 / What is missing?
+      type: text
+    - name: link_014
+      label: Link destination · 05  Turn the answers into a working
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · Turn the answers into a working agreement.
+      type: text
+  - name: section_03
+    label: 01 / What should be different when this is done?
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / What should be different when this is done?
+      type: text
+    - name: text_002
+      label: Text · Start with the intended change. A request for a website or presen
+      type: text
+    - name: text_003
+      label: Heading · 02 / Who needs to use or approve the work?
+      type: text
+    - name: text_004
+      label: Text · The audience, project contact, and final approver may be differen
+      type: text
+    - name: text_005
+      label: Heading · 03 / What is already fixed?
+      type: text
+    - name: text_006
+      label: 'Text · Document the real constraints: launch timing, formats, required c'
+      type: text
+    - name: text_007
+      label: Heading · 04 / What is missing?
+      type: text
+    - name: text_008
+      label: Text · Ask about inputs the team does not yet have. Copy, permissions, i
+      type: text
+    - name: text_009
+      label: Heading · Turn the answers into a working agreement.
+      type: text
+    - name: text_010
+      label: Text · Capture the purpose, deliverables, responsibilities, constraints,
+      type: text
+    - name: text_011
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_012
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_013
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: The brief changed. Now what? ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 07
+      type: text
+    - name: link_002
+      label: Link destination · The brief changed. Now what? ↗
+      type: string
+    - name: text_003
+      label: Heading · The brief changed. Now what? ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-handover-is-a-design-problem
+  label: Handover is a design problem.
+  type: file
+  path: content/pages/handover-is-a-design-problem.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Handover is a design problem.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · OPERATIONS / FIELD NOTE 03
+      type: text
+    - name: text_004
+      label: Heading · Handover is a design problem.
+      type: text
+    - name: text_005
+      label: Text · Making the work useful to the person who inherits it.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 1 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 03
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  Delivery is not the end of usab
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · Delivery is not the end of usability.
+      type: text
+    - name: link_005
+      label: Link destination · 02  Start with the recipient.
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · Start with the recipient.
+      type: text
+    - name: link_008
+      label: Link destination · 03  Design a small map.
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · Design a small map.
+      type: text
+    - name: link_011
+      label: Link destination · 04  Be honest about what is open.
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · Be honest about what is open.
+      type: text
+    - name: link_014
+      label: Link destination · 05  Use the cold-start test.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · Use the cold-start test.
+      type: text
+  - name: section_03
+    label: Delivery is not the end of usability.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · Delivery is not the end of usability.
+      type: text
+    - name: text_002
+      label: Text · A handover can contain every promised file and still be difficult
+      type: text
+    - name: text_003
+      label: Heading · Start with the recipient.
+      type: text
+    - name: text_004
+      label: Text · Think about what the next team needs to do. A developer needs rel
+      type: text
+    - name: text_005
+      label: Heading · Design a small map.
+      type: text
+    - name: text_006
+      label: 'Text · Use plain labels, group related assets, and connect each link to '
+      type: text
+    - name: text_007
+      label: Heading · Be honest about what is open.
+      type: text
+    - name: text_008
+      label: Text · A useful handover distinguishes finished work from decisions or i
+      type: text
+    - name: text_009
+      label: Heading · Use the cold-start test.
+      type: text
+    - name: text_010
+      label: 'Text · Imagine opening the handover without having attended any project '
+      type: text
+    - name: text_011
+      label: Text · Continue on Substack ↗
+      type: text
+    - name: link_012
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: The 5-line update people actually read. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 04
+      type: text
+    - name: link_002
+      label: Link destination · The 5-line update people actually r
+      type: string
+    - name: text_003
+      label: Heading · The 5-line update people actually read. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-index
+  label: Home
+  type: file
+  path: content/pages/index.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Your ambition. A shared plan. Brought to life.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · PROJECT DELIVERY & COMMUNICATIONS / VC & FOUNDERS
+      type: text
+    - name: text_002
+      label: Text · PEOPLE × PROCESS × POSSIBILITY
+      type: text
+    - name: text_003
+      label: Heading · Your ambition.
+      type: text
+    - name: text_004
+      label: Text · A shared plan.
+      type: text
+    - name: text_005
+      label: Text · Brought to life.
+      type: text
+    - name: text_006
+      label: Text · tap the rings ↗
+      type: text
+    - name: text_007
+      label: Text · PEOPLE
+      type: text
+    - name: text_008
+      label: Text · PROCESS
+      type: text
+    - name: text_009
+      label: Text · POSSIBILITY
+      type: text
+    - name: text_010
+      label: Text · people.
+      type: text
+    - name: text_011
+      label: Text · plans. possibility.
+      type: text
+    - name: text_012
+      label: Text · ×
+      type: text
+    - name: text_013
+      label: Text · Another thought ↗
+      type: text
+    - name: image_src_014
+      label: Image
+      type: image
+    - name: image_alt_015
+      label: Image description
+      type: string
+    - name: text_016
+      label: Text · Hi, I’m Cynthia.
+      type: text
+    - name: text_017
+      label: Text · I help VC teams, founders and their creative partners
+      type: text
+    - name: text_018
+      label: Text · turn brand, web and launch plans into coordinated delivery.
+      type: text
+    - name: link_019
+      label: Link destination · See the projects I’ve helped delive
+      type: string
+    - name: text_020
+      label: Text · See the projects I’ve helped deliver
+      type: text
+    - name: text_021
+      label: Text · ↓
+      type: text
+    - name: text_022
+      label: Text · A clear head.
+      type: text
+    - name: text_023
+      label: Text · A human approach.
+      type: text
+  - name: section_02
+    label: ticker
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · CLARITY IS A CREATIVE ADVANTAGE
+      type: text
+    - name: text_002
+      label: Text · ✳
+      type: text
+    - name: text_003
+      label: Text · GOOD WORK IS A TEAM SPORT
+      type: text
+    - name: text_004
+      label: Text · ✳
+      type: text
+    - name: text_005
+      label: Text · CLARITY IS A CREATIVE ADVANTAGE
+      type: text
+    - name: text_006
+      label: Text · ✳
+      type: text
+    - name: text_007
+      label: Text · GOOD WORK IS A TEAM SPORT
+      type: text
+    - name: text_008
+      label: Text · ✳
+      type: text
+  - name: section_03
+    label: From an ambitious plan to a coordinated delivery.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · YOUR TEAM HAS THE TOOLS. THE WORK STILL NEEDS ALIGNMENT.
+      type: text
+    - name: text_002
+      label: Heading · From an ambitious plan
+      type: text
+    - name: text_003
+      label: Text · to a coordinated delivery.
+      type: text
+    - name: text_004
+      label: 'Text · For VC teams, founders and the creative partners supporting them:'
+      type: text
+    - name: link_005
+      label: Link destination · 01 Define the outcome Agree the bri
+      type: string
+    - name: text_006
+      label: Text · 01
+      type: text
+    - name: text_007
+      label: Text · Define the outcome
+      type: text
+    - name: text_008
+      label: 'Text · Agree the brief, audience, deliverables and decisions before the '
+      type: text
+    - name: text_009
+      label: Text · Explore the delivery process ↗
+      type: text
+    - name: link_010
+      label: Link destination · 02 Connect the team Give designers,
+      type: string
+    - name: text_011
+      label: Text · 02
+      type: text
+    - name: text_012
+      label: Text · Connect the team
+      type: text
+    - name: text_013
+      label: Text · Give designers, developers and content contributors clear owners,
+      type: text
+    - name: text_014
+      label: Text · Explore the delivery process ↗
+      type: text
+    - name: link_015
+      label: Link destination · 03 Keep decisions moving Bring feed
+      type: string
+    - name: text_016
+      label: Text · 03
+      type: text
+    - name: text_017
+      label: Text · Keep decisions moving
+      type: text
+    - name: text_018
+      label: Text · Bring feedback into one place, flag blockers and make the next ac
+      type: text
+    - name: text_019
+      label: Text · Explore the delivery process ↗
+      type: text
+    - name: link_020
+      label: Link destination · 04 Make the handover useful Organiz
+      type: string
+    - name: text_021
+      label: Text · 04
+      type: text
+    - name: text_022
+      label: Text · Make the handover useful
+      type: text
+    - name: text_023
+      label: Text · Organize final files, receiving-team context and any remaining re
+      type: text
+    - name: text_024
+      label: Text · Explore the delivery process ↗
+      type: text
+  - name: section_04
+    label: Big ideas deserve thoughtful execution.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · 01 — THE THROUGH LINE
+      type: text
+    - name: text_002
+      label: Heading · Big ideas deserve
+      type: text
+    - name: text_003
+      label: Text · thoughtful execution.
+      type: text
+    - name: text_004
+      label: Text · You need more than a task list when a fund brand, website or laun
+      type: text
+    - name: text_005
+      label: Text · Meet the person behind the process ↗
+      type: text
+    - name: link_006
+      label: 'Link destination · '
+      type: string
+  - name: section_05
+    label: The ambition is clear. The next step isn’t.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · DOES THIS SOUND FAMILIAR?
+      type: text
+    - name: text_002
+      label: Heading · The ambition is clear.
+      type: text
+    - name: text_003
+      label: Text · The next step isn’t.
+      type: text
+    - name: link_004
+      label: Link destination · 01 / TOO MANY MOVING PARTS You have
+      type: string
+    - name: text_005
+      label: Text · 01 / TOO MANY MOVING PARTS
+      type: text
+    - name: text_006
+      label: Heading · You have a team.
+      type: text
+    - name: text_007
+      label: Text · You need a shared direction.
+      type: text
+    - name: text_008
+      label: Text · I connect the brief, contributors, and dependencies so the work h
+      type: text
+    - name: text_009
+      label: Text · Bring structure to delivery ↗
+      type: text
+    - name: link_010
+      label: Link destination · 02 / TOO MANY CONVERSATIONS Everyon
+      type: string
+    - name: text_011
+      label: Text · 02 / TOO MANY CONVERSATIONS
+      type: text
+    - name: text_012
+      label: Heading · Everyone has feedback.
+      type: text
+    - name: text_013
+      label: Text · Who has the decision?
+      type: text
+    - name: text_014
+      label: Text · I turn scattered conversations into clear updates, review request
+      type: text
+    - name: text_015
+      label: Text · Make communication useful ↗
+      type: text
+    - name: link_016
+      label: 'Link destination · 03 / TOO MUCH CONTEXT IN YOUR HEAD '
+      type: string
+    - name: text_017
+      label: Text · 03 / TOO MUCH CONTEXT IN YOUR HEAD
+      type: text
+    - name: text_018
+      label: Heading · The work is moving.
+      type: text
+    - name: text_019
+      label: Text · The system should keep up.
+      type: text
+    - name: text_020
+      label: Text · I organize trackers and handovers so people can find the latest w
+      type: text
+    - name: text_021
+      label: Text · See the systems behind the work ↗
+      type: text
+  - name: section_06
+    label: Real projects. A clear part in each.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · SELECTED EXPERIENCE / DELIVERED WITH TONY & CO
+      type: text
+    - name: text_002
+      label: Heading · Real projects.
+      type: text
+    - name: text_003
+      label: Text · A clear part in each.
+      type: text
+    - name: text_004
+      label: Text · Fund brands, founder communities, event platforms and launch comm
+      type: text
+    - name: text_005
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+    - name: link_006
+      label: Link destination · 01 / Founder community / Event ecos
+      type: string
+    - name: text_007
+      label: Text · 01 / Founder community / Event ecosystem
+      type: text
+    - name: text_008
+      label: Text · Nordic Tech Week
+      type: text
+    - name: text_009
+      label: Text · Handover coordinated
+      type: text
+    - name: text_010
+      label: Heading · One event. Many assets. A shared finish line.
+      type: text
+    - name: text_011
+      label: Text · I coordinated client communication, reviews and final-file organi
+      type: text
+    - name: text_012
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_013
+      label: 'Link destination · 02 / Venture capital / Physical AI '
+      type: string
+    - name: text_014
+      label: Text · 02 / Venture capital / Physical AI
+      type: text
+    - name: text_015
+      label: Text · Dirty Jobs / VSC Ventures
+      type: text
+    - name: text_016
+      label: Text · Event delivery + ongoing content
+      type: text
+    - name: text_017
+      label: Heading · Connecting the website, the event and the content.
+      type: text
+    - name: text_018
+      label: Text · I coordinated client updates, asset reviews, website-related foll
+      type: text
+    - name: text_019
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_020
+      label: Link destination · 03 / Venture capital / Fund brand S
+      type: string
+    - name: text_021
+      label: Text · 03 / Venture capital / Fund brand
+      type: text
+    - name: text_022
+      label: Text · Substance Fund
+      type: text
+    - name: text_023
+      label: Text · Handover walkthrough coordinated
+      type: text
+    - name: text_024
+      label: Heading · A fund brand, website and deck—with a clear handover.
+      type: text
+    - name: text_025
+      label: 'Text · I managed client communication, review coordination and handover '
+      type: text
+    - name: text_026
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_027
+      label: Link destination · 04 / Financial services / Accountin
+      type: string
+    - name: text_028
+      label: Text · 04 / Financial services / Accounting advisory
+      type: text
+    - name: text_029
+      label: Text · Fervent
+      type: text
+    - name: text_030
+      label: Text · Website + asset reviews in progress
+      type: text
+    - name: text_031
+      label: Heading · Keeping website decisions and business assets connected.
+      type: text
+    - name: text_032
+      label: Text · I coordinate client reviews, consolidate website feedback, mainta
+      type: text
+    - name: text_033
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_034
+      label: 'Link destination · 05 / Launch communications / Video '
+      type: string
+    - name: text_035
+      label: Text · 05 / Launch communications / Video
+      type: text
+    - name: text_036
+      label: Text · Fintheon
+      type: text
+    - name: text_037
+      label: Text · Creative delivery completed
+      type: text
+    - name: text_038
+      label: Heading · From launch brief to a usable video handover.
+      type: text
+    - name: text_039
+      label: 'Text · I coordinated reviews and client communication, and prepared the '
+      type: text
+    - name: text_040
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_041
+      label: 'Link destination · 06 / Technology / Website delivery '
+      type: string
+    - name: text_042
+      label: Text · 06 / Technology / Website delivery
+      type: text
+    - name: text_043
+      label: Text · Dalton Mills
+      type: text
+    - name: text_044
+      label: Text · In progress · October 2026
+      type: text
+    - name: text_045
+      label: Heading · Making each website review lead to the next decision.
+      type: text
+    - name: text_046
+      label: Text · I coordinate the project schedule, client communication, internal
+      type: text
+    - name: text_047
+      label: Text · See my contribution ↗
+      type: text
+  - name: section_07
+    label: Less chaos. More momentum.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · HOW I SUPPORT YOUR TEAM
+      type: text
+    - name: text_002
+      label: Heading · Less chaos.
+      type: text
+    - name: text_003
+      label: Text · More momentum.
+      type: text
+    - name: text_004
+      label: Text · A closer look at my practice.
+      type: text
+    - name: text_005
+      label: Text · Real responsibilities. A human perspective.
+      type: text
+    - name: link_006
+      label: Link destination · 01 / CREATIVE DELIVERY From a movin
+      type: string
+    - name: text_007
+      label: Text · 01 /
+      type: text
+    - name: text_008
+      label: Text · CREATIVE DELIVERY
+      type: text
+    - name: text_009
+      label: Heading · From a moving brief
+      type: text
+    - name: text_010
+      label: Text · to a shared direction.
+      type: text
+    - name: text_011
+      label: Text · Brand, web, video & motion · Project coordination
+      type: text
+    - name: text_012
+      label: Text · ↗
+      type: text
+    - name: link_013
+      label: Link destination · 02 / COMMUNICATIONS The right infor
+      type: string
+    - name: text_014
+      label: Text · 02 /
+      type: text
+    - name: text_015
+      label: Text · COMMUNICATIONS
+      type: text
+    - name: text_016
+      label: Heading · The right information.
+      type: text
+    - name: text_017
+      label: Text · The next clear move.
+      type: text
+    - name: text_018
+      label: Text · Client communication · Reviews · Decision records
+      type: text
+    - name: text_019
+      label: Text · ↗
+      type: text
+    - name: link_020
+      label: Link destination · 03 / PROJECT OPERATIONS Systems tha
+      type: string
+    - name: text_021
+      label: Text · 03 /
+      type: text
+    - name: text_022
+      label: Text · PROJECT OPERATIONS
+      type: text
+    - name: text_023
+      label: Heading · Systems that keep
+      type: text
+    - name: text_024
+      label: Text · good work moving.
+      type: text
+    - name: text_025
+      label: Text · Trackers · Team rhythms · Handover systems
+      type: text
+    - name: text_026
+      label: Text · + + +
+      type: text
+    - name: text_027
+      label: Text · + + +
+      type: text
+    - name: text_028
+      label: Text · + + +
+      type: text
+    - name: text_029
+      label: Text · ↗
+      type: text
+    - name: text_030
+      label: Text · Explore the named project examples above, then see the methods be
+      type: text
+  - name: section_08
+    label: From “where do we start?” to “here’s what’s next.”
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · 03 — HOW I THINK
+      type: text
+    - name: text_002
+      label: Heading · From “where do we start?”
+      type: text
+    - name: text_003
+      label: Text · to “here’s what’s next.”
+      type: text
+    - name: text_004
+      label: Text · Tap a stage to see how I turn
+      type: text
+    - name: text_005
+      label: Text · ambiguity into a workable next step.
+      type: text
+    - name: text_006
+      label: Text · 01 / Listen
+      type: text
+    - name: text_007
+      label: Text · 02 / Align
+      type: text
+    - name: text_008
+      label: Text · 03 / Move
+      type: text
+    - name: text_009
+      label: Text · 04 / Close
+      type: text
+    - name: text_010
+      label: Text · ◎
+      type: text
+    - name: text_011
+      label: Heading · Start with the real question.
+      type: text
+    - name: text_012
+      label: Text · Understand the intended outcome, the people involved, and the con
+      type: text
+    - name: text_013
+      label: Text · OUTPUT / A SHARED BRIEF
+      type: text
+  - name: section_09
+    label: 10 field notes. A clearer next move.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · 04 — THE BLOG
+      type: text
+    - name: text_002
+      label: Heading · 10 field notes.
+      type: text
+    - name: text_003
+      label: Text · A clearer next move.
+      type: text
+    - name: text_004
+      label: Text · Search the field notes ↗
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+    - name: link_006
+      label: Link destination · FIELD NOTE / 01 THE PRACTICE OF MOV
+      type: string
+    - name: text_007
+      label: Text · FIELD NOTE / 01
+      type: text
+    - name: text_008
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_009
+      label: Text · PROJECT MANAGEMENT · FIELD NOTE 01
+      type: text
+    - name: text_010
+      label: Heading · A meeting is not a next step.
+      type: text
+    - name: text_011
+      label: Text · Turning a good conversation into work someone can actually own.
+      type: text
+    - name: text_012
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_013
+      label: Link destination · FIELD NOTE / 02 THE PRACTICE OF MOV
+      type: string
+    - name: text_014
+      label: Text · FIELD NOTE / 02
+      type: text
+    - name: text_015
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_016
+      label: Text · COMMUNICATIONS · FIELD NOTE 02
+      type: text
+    - name: text_017
+      label: Heading · Good feedback needs a home.
+      type: text
+    - name: text_018
+      label: Text · A practical argument for one clear place to make decisions.
+      type: text
+    - name: text_019
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_020
+      label: Link destination · FIELD NOTE / 03 THE PRACTICE OF MOV
+      type: string
+    - name: text_021
+      label: Text · FIELD NOTE / 03
+      type: text
+    - name: text_022
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_023
+      label: Text · OPERATIONS · FIELD NOTE 03
+      type: text
+    - name: text_024
+      label: Heading · Handover is a design problem.
+      type: text
+    - name: text_025
+      label: Text · Making the work useful to the person who inherits it.
+      type: text
+    - name: text_026
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_027
+      label: Link destination · FIELD NOTE / 04 THE PRACTICE OF MOV
+      type: string
+    - name: text_028
+      label: Text · FIELD NOTE / 04
+      type: text
+    - name: text_029
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_030
+      label: Text · COMMUNICATIONS · FIELD NOTE 04
+      type: text
+    - name: text_031
+      label: Heading · The 5-line update people actually read.
+      type: text
+    - name: text_032
+      label: Text · A repeatable structure for progress, decisions, risks, and the ne
+      type: text
+    - name: text_033
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_034
+      label: Link destination · FIELD NOTE / 05 THE PRACTICE OF MOV
+      type: string
+    - name: text_035
+      label: Text · FIELD NOTE / 05
+      type: text
+    - name: text_036
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_037
+      label: Text · OPERATIONS · FIELD NOTE 05
+      type: text
+    - name: text_038
+      label: Heading · 6 project statuses. Zero guesswork.
+      type: text
+    - name: text_039
+      label: Text · How to make a tracker describe the work instead of decorate it.
+      type: text
+    - name: text_040
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_041
+      label: Link destination · FIELD NOTE / 06 THE PRACTICE OF MOV
+      type: string
+    - name: text_042
+      label: Text · FIELD NOTE / 06
+      type: text
+    - name: text_043
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_044
+      label: Text · PROJECT MANAGEMENT · FIELD NOTE 06
+      type: text
+    - name: text_045
+      label: Heading · 4 questions before you call it a brief.
+      type: text
+    - name: text_046
+      label: Text · The small conversation that gives a project a stronger start.
+      type: text
+    - name: text_047
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_048
+      label: Link destination · FIELD NOTE / 07 THE PRACTICE OF MOV
+      type: string
+    - name: text_049
+      label: Text · FIELD NOTE / 07
+      type: text
+    - name: text_050
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_051
+      label: Text · PROJECT MANAGEMENT · FIELD NOTE 07
+      type: text
+    - name: text_052
+      label: Heading · The brief changed. Now what?
+      type: text
+    - name: text_053
+      label: Text · A calm, 4-step approach to handling new requests.
+      type: text
+    - name: text_054
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_055
+      label: Link destination · FIELD NOTE / 08 THE PRACTICE OF MOV
+      type: string
+    - name: text_056
+      label: Text · FIELD NOTE / 08
+      type: text
+    - name: text_057
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_058
+      label: Text · COMMUNICATIONS · FIELD NOTE 08
+      type: text
+    - name: text_059
+      label: Heading · One project. 3 different conversations.
+      type: text
+    - name: text_060
+      label: Text · Why clients, contributors, and project leads need different updat
+      type: text
+    - name: text_061
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_062
+      label: Link destination · FIELD NOTE / 09 THE PRACTICE OF MOV
+      type: string
+    - name: text_063
+      label: Text · FIELD NOTE / 09
+      type: text
+    - name: text_064
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_065
+      label: Text · OPERATIONS · FIELD NOTE 09
+      type: text
+    - name: text_066
+      label: Heading · Done is a conversation, too.
+      type: text
+    - name: text_067
+      label: Text · 5 checks that make project closeout more useful.
+      type: text
+    - name: text_068
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_069
+      label: Link destination · FIELD NOTE / 10 THE PRACTICE OF MOV
+      type: string
+    - name: text_070
+      label: Text · FIELD NOTE / 10
+      type: text
+    - name: text_071
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_072
+      label: Text · COMMUNITY · FIELD NOTE 10
+      type: text
+    - name: text_073
+      label: Heading · What community work teaches you about delivery.
+      type: text
+    - name: text_074
+      label: Text · 3 habits that help teams feel informed, involved, and able to con
+      type: text
+    - name: text_075
+      label: Text · Take this into your next project ↗
+      type: text
+  - name: section_10
+    label: The plan has a backstory.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE SKETCH DESK / A LOOK INSIDE MY THINKING
+      type: text
+    - name: text_002
+      label: Heading · The plan has
+      type: text
+    - name: text_003
+      label: Text · a backstory.
+      type: text
+    - name: text_004
+      label: Text · Before the tracker, there’s a question. Before the roadmap, a rou
+      type: text
+    - name: text_005
+      label: Text · Open my sketch decks ↗
+      type: text
+    - name: link_006
+      label: 'Link destination · '
+      type: string
+    - name: text_007
+      label: Text · Illustrative roadmaps & working notes.
+      type: text
+    - name: link_008
+      label: Link destination · first, ask why? rough plan → next m
+      type: string
+    - name: text_009
+      label: Text · first, ask
+      type: text
+    - name: text_010
+      label: Text · why?
+      type: text
+    - name: text_011
+      label: Text · rough plan
+      type: text
+    - name: text_012
+      label: Text · → next move
+      type: text
+    - name: text_013
+      label: Text · → clearer path
+      type: text
+    - name: text_014
+      label: Text · work in
+      type: text
+    - name: text_015
+      label: Text · progress.
+      type: text
+    - name: text_016
+      label: Text · ✳
+      type: text
+    - name: text_017
+      label: Text · 08 DECKS / 40 SKETCHES ↗
+      type: text
+  - name: section_11
+    label: Before we say hello.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · A FEW THINGS YOU MIGHT BE WONDERING
+      type: text
+    - name: text_002
+      label: Heading · Before we
+      type: text
+    - name: text_003
+      label: Text · say hello.
+      type: text
+    - name: text_004
+      label: Text · What kind of work do you manage?
+      type: text
+    - name: text_005
+      label: 'Text · I coordinate creative projects across branding, websites, video, '
+      type: text
+    - name: text_006
+      label: Text · How does your work connect to the VC ecosystem?
+      type: text
+    - name: text_007
+      label: Text · I manage projects and communications for creative work in the fin
+      type: text
+    - name: text_008
+      label: Text · Can I see named client case studies?
+      type: text
+    - name: text_009
+      label: Text · Yes. Explore Nordic Tech Week, Dirty Jobs / VSC Ventures, Substan
+      type: text
+    - name: text_010
+      label: Text · Explore the projects ↗
+      type: text
+    - name: link_011
+      label: 'Link destination · '
+      type: string
+    - name: text_012
+      label: Text · What is the best way to start a conversation?
+      type: text
+    - name: text_013
+      label: 'Text · Email me with the project or opportunity, its current stage, and '
+      type: text
+    - name: text_014
+      label: Text · Choose how to get in touch ↗
+      type: text
+    - name: link_015
+      label: 'Link destination · '
+      type: string
+  - name: section_12
+    label: Better questions. More useful work.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · LET’S KEEP THE CONVERSATION GOING
+      type: text
+    - name: text_002
+      label: Heading · Better questions.
+      type: text
+    - name: text_003
+      label: Text · More useful work.
+      type: text
+    - name: text_004
+      label: Text · Writing on project management, communications,
+      type: text
+    - name: text_005
+      label: Text · community, and learning about the venture ecosystem.
+      type: text
+    - name: text_006
+      label: Text · Read & subscribe on Substack
+      type: text
+    - name: link_007
+      label: Link destination ·  ↗
+      type: string
+    - name: text_008
+      label: Text · ↗
+      type: text
+    - name: text_009
+      label: Text · Read and subscribe on Substack.
+      type: text
+    - name: text_010
+      label: Text · FIELD NOTES
+      type: text
+    - name: text_011
+      label: Text · For people
+      type: text
+    - name: text_012
+      label: Text · who make
+      type: text
+    - name: text_013
+      label: Text · things happen.
+      type: text
+    - name: text_014
+      label: Text · CYNTHIA UDOH ↗
+      type: text
+- name: page-notes
+  label: Project Management Blog & Field Notes
+  type: file
+  path: content/pages/notes.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Less theory. More “I can use that.”
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE BLOG / 10 IDEAS TO TAKE INTO YOUR NEXT PROJECT
+      type: text
+    - name: text_002
+      label: Heading · Less theory.
+      type: text
+    - name: text_003
+      label: Text · More “I can use that.”
+      type: text
+    - name: text_004
+      label: Text · Practical writing on project management, client communication, cr
+      type: text
+    - name: text_005
+      label: Text · 10 original portfolio essays · Editorial drafts prepared for this
+      type: text
+    - name: text_006
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: section notes-index
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · Find a useful idea
+      type: text
+    - name: text_002
+      label: Text · All 10
+      type: text
+    - name: text_003
+      label: Text · Project management
+      type: text
+    - name: text_004
+      label: Text · Communications
+      type: text
+    - name: text_005
+      label: Text · Operations
+      type: text
+    - name: text_006
+      label: Text · Community
+      type: text
+    - name: text_007
+      label: Text · Showing 10 field notes
+      type: text
+    - name: link_008
+      label: Link destination · FIELD NOTE / 01 THE PRACTICE OF MOV
+      type: string
+    - name: text_009
+      label: Text · FIELD NOTE / 01
+      type: text
+    - name: text_010
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_011
+      label: Text · PROJECT MANAGEMENT · FIELD NOTE 01
+      type: text
+    - name: text_012
+      label: Heading · A meeting is not a next step.
+      type: text
+    - name: text_013
+      label: Text · Turning a good conversation into work someone can actually own.
+      type: text
+    - name: text_014
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_015
+      label: Link destination · FIELD NOTE / 02 THE PRACTICE OF MOV
+      type: string
+    - name: text_016
+      label: Text · FIELD NOTE / 02
+      type: text
+    - name: text_017
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_018
+      label: Text · COMMUNICATIONS · FIELD NOTE 02
+      type: text
+    - name: text_019
+      label: Heading · Good feedback needs a home.
+      type: text
+    - name: text_020
+      label: Text · A practical argument for one clear place to make decisions.
+      type: text
+    - name: text_021
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_022
+      label: Link destination · FIELD NOTE / 03 THE PRACTICE OF MOV
+      type: string
+    - name: text_023
+      label: Text · FIELD NOTE / 03
+      type: text
+    - name: text_024
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_025
+      label: Text · OPERATIONS · FIELD NOTE 03
+      type: text
+    - name: text_026
+      label: Heading · Handover is a design problem.
+      type: text
+    - name: text_027
+      label: Text · Making the work useful to the person who inherits it.
+      type: text
+    - name: text_028
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_029
+      label: Link destination · FIELD NOTE / 04 THE PRACTICE OF MOV
+      type: string
+    - name: text_030
+      label: Text · FIELD NOTE / 04
+      type: text
+    - name: text_031
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_032
+      label: Text · COMMUNICATIONS · FIELD NOTE 04
+      type: text
+    - name: text_033
+      label: Heading · The 5-line update people actually read.
+      type: text
+    - name: text_034
+      label: Text · A repeatable structure for progress, decisions, risks, and the ne
+      type: text
+    - name: text_035
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_036
+      label: Link destination · FIELD NOTE / 05 THE PRACTICE OF MOV
+      type: string
+    - name: text_037
+      label: Text · FIELD NOTE / 05
+      type: text
+    - name: text_038
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_039
+      label: Text · OPERATIONS · FIELD NOTE 05
+      type: text
+    - name: text_040
+      label: Heading · 6 project statuses. Zero guesswork.
+      type: text
+    - name: text_041
+      label: Text · How to make a tracker describe the work instead of decorate it.
+      type: text
+    - name: text_042
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_043
+      label: Link destination · FIELD NOTE / 06 THE PRACTICE OF MOV
+      type: string
+    - name: text_044
+      label: Text · FIELD NOTE / 06
+      type: text
+    - name: text_045
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_046
+      label: Text · PROJECT MANAGEMENT · FIELD NOTE 06
+      type: text
+    - name: text_047
+      label: Heading · 4 questions before you call it a brief.
+      type: text
+    - name: text_048
+      label: Text · The small conversation that gives a project a stronger start.
+      type: text
+    - name: text_049
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_050
+      label: Link destination · FIELD NOTE / 07 THE PRACTICE OF MOV
+      type: string
+    - name: text_051
+      label: Text · FIELD NOTE / 07
+      type: text
+    - name: text_052
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_053
+      label: Text · PROJECT MANAGEMENT · FIELD NOTE 07
+      type: text
+    - name: text_054
+      label: Heading · The brief changed. Now what?
+      type: text
+    - name: text_055
+      label: Text · A calm, 4-step approach to handling new requests.
+      type: text
+    - name: text_056
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_057
+      label: Link destination · FIELD NOTE / 08 THE PRACTICE OF MOV
+      type: string
+    - name: text_058
+      label: Text · FIELD NOTE / 08
+      type: text
+    - name: text_059
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_060
+      label: Text · COMMUNICATIONS · FIELD NOTE 08
+      type: text
+    - name: text_061
+      label: Heading · One project. 3 different conversations.
+      type: text
+    - name: text_062
+      label: Text · Why clients, contributors, and project leads need different updat
+      type: text
+    - name: text_063
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_064
+      label: Link destination · FIELD NOTE / 09 THE PRACTICE OF MOV
+      type: string
+    - name: text_065
+      label: Text · FIELD NOTE / 09
+      type: text
+    - name: text_066
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_067
+      label: Text · OPERATIONS · FIELD NOTE 09
+      type: text
+    - name: text_068
+      label: Heading · Done is a conversation, too.
+      type: text
+    - name: text_069
+      label: Text · 5 checks that make project closeout more useful.
+      type: text
+    - name: text_070
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: link_071
+      label: Link destination · FIELD NOTE / 10 THE PRACTICE OF MOV
+      type: string
+    - name: text_072
+      label: Text · FIELD NOTE / 10
+      type: text
+    - name: text_073
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+    - name: text_074
+      label: Text · COMMUNITY · FIELD NOTE 10
+      type: text
+    - name: text_075
+      label: Heading · What community work teaches you about delivery.
+      type: text
+    - name: text_076
+      label: Text · 3 habits that help teams feel informed, involved, and able to con
+      type: text
+    - name: text_077
+      label: Text · Take this into your next project ↗
+      type: text
+    - name: text_078
+      label: Text · No matching notes yet. Try a different term or choose All 10.
+      type: text
+  - name: section_03
+    label: Your next useful read, one click away.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP A GOOD IDEA CLOSE
+      type: text
+    - name: text_002
+      label: Heading · Your next useful read,
+      type: text
+    - name: text_003
+      label: Text · one click away.
+      type: text
+    - name: text_004
+      label: Text · Explore my writing and subscribe through Substack.
+      type: text
+    - name: text_005
+      label: Text · Read & subscribe ↗
+      type: text
+    - name: link_006
+      label: 'Link destination · '
+      type: string
+- name: page-practice-communications
+  label: The right information. The next clear move.
+  type: file
+  path: content/pages/practice-communications.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: The right information. The next clear move.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Back to the work
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · PRACTICE NARRATIVE / COMMUNICATIONS
+      type: text
+    - name: text_004
+      label: Heading · The right information. The next clear move.
+      type: text
+    - name: text_005
+      label: Text · Good communication is part of delivery. It helps people make deci
+      type: text
+    - name: text_006
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: The challenge
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY CONTRIBUTION
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · WORKING OUTPUTS
+      type: text
+    - name: text_005
+      label: Text · ↗ Decision summaries
+      type: text
+    - name: text_006
+      label: Text · ↗ Audience-aware updates
+      type: text
+    - name: text_007
+      label: Text · ↗ Review requests
+      type: text
+    - name: text_008
+      label: Text · ↗ Actionable next steps
+      type: text
+    - name: text_009
+      label: Heading · The challenge
+      type: text
+    - name: text_010
+      label: Text · A client conversation and an internal production conversation ser
+      type: text
+    - name: text_011
+      label: Heading · My contribution
+      type: text
+    - name: text_012
+      label: Text · I prepare client updates, internal summaries, reminders, and hand
+      type: text
+    - name: text_013
+      label: Heading · The working method
+      type: text
+    - name: text_014
+      label: Text · Separate decisions from open questions. State what changed and wh
+      type: text
+    - name: text_015
+      label: Heading · What useful communication looks like
+      type: text
+    - name: text_016
+      label: 'Text · A reader can quickly answer: what happened, what does it mean for'
+      type: text
+    - name: text_017
+      label: 'Text · This working method is illustrated by the named project examples '
+      type: text
+    - name: text_018
+      label: Heading · Where this shows up in my work
+      type: text
+    - name: text_019
+      label: Text · Dirty Jobs / VSC Ventures — see the project contribution ↗
+      type: text
+    - name: link_020
+      label: 'Link destination · '
+      type: string
+    - name: text_021
+      label: Text · Fervent — see the project contribution ↗
+      type: text
+    - name: link_022
+      label: 'Link destination · '
+      type: string
+    - name: text_023
+      label: Text · RECOGNIZE THIS CHALLENGE?
+      type: text
+    - name: text_024
+      label: Heading · Let’s talk about what your team needs.
+      type: text
+    - name: text_025
+      label: Text · Share the goal, the current stage, and the part that feels stuck.
+      type: text
+    - name: text_026
+      label: Text · Start a project conversation ↗
+      type: text
+    - name: link_027
+      label: 'Link destination · '
+      type: string
+- name: page-practice-delivery
+  label: From a moving brief to a shared direction.
+  type: file
+  path: content/pages/practice-delivery.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: From a moving brief to a shared direction.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Back to the work
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · PRACTICE NARRATIVE / CREATIVE DELIVERY
+      type: text
+    - name: text_004
+      label: Heading · From a moving brief to a shared direction.
+      type: text
+    - name: text_005
+      label: Text · Creative projects rarely move in a straight line. A change in cop
+      type: text
+    - name: text_006
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: The challenge
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY CONTRIBUTION
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · WORKING OUTPUTS
+      type: text
+    - name: text_005
+      label: Text · ↗ A clear brief
+      type: text
+    - name: text_006
+      label: Text · ↗ Named task owners
+      type: text
+    - name: text_007
+      label: Text · ↗ Consolidated feedback
+      type: text
+    - name: text_008
+      label: Text · ↗ Visible dependencies
+      type: text
+    - name: text_009
+      label: Heading · The challenge
+      type: text
+    - name: text_010
+      label: Text · Different disciplines need different information. When expectatio
+      type: text
+    - name: text_011
+      label: Heading · My contribution
+      type: text
+    - name: text_012
+      label: 'Text · I translate conversations into trackable tasks, connect feedback '
+      type: text
+    - name: text_013
+      label: Heading · The working method
+      type: text
+    - name: text_014
+      label: Text · Start with the agreed scope. Break the work into deliverables. Gi
+      type: text
+    - name: text_015
+      label: Heading · What good delivery looks like
+      type: text
+    - name: text_016
+      label: Text · The team can see what is ready, what is waiting, and what needs a
+      type: text
+    - name: text_017
+      label: 'Text · This working method is illustrated by the named project examples '
+      type: text
+    - name: text_018
+      label: Heading · Where this shows up in my work
+      type: text
+    - name: text_019
+      label: Text · Nordic Tech Week — see the project contribution ↗
+      type: text
+    - name: link_020
+      label: 'Link destination · '
+      type: string
+    - name: text_021
+      label: Text · Fintheon — see the project contribution ↗
+      type: text
+    - name: link_022
+      label: 'Link destination · '
+      type: string
+    - name: text_023
+      label: Text · Dalton Mills — see the project contribution ↗
+      type: text
+    - name: link_024
+      label: 'Link destination · '
+      type: string
+    - name: text_025
+      label: Text · RECOGNIZE THIS CHALLENGE?
+      type: text
+    - name: text_026
+      label: Heading · Let’s talk about what your team needs.
+      type: text
+    - name: text_027
+      label: Text · Share the goal, the current stage, and the part that feels stuck.
+      type: text
+    - name: text_028
+      label: Text · Start a project conversation ↗
+      type: text
+    - name: link_029
+      label: 'Link destination · '
+      type: string
+- name: page-practice-operations
+  label: Systems that keep good work moving.
+  type: file
+  path: content/pages/practice-operations.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Systems that keep good work moving.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Back to the work
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · PRACTICE NARRATIVE / PROJECT OPERATIONS
+      type: text
+    - name: text_004
+      label: Heading · Systems that keep good work moving.
+      type: text
+    - name: text_005
+      label: Text · A useful project system gives people a shared view of the work wi
+      type: text
+    - name: text_006
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: The challenge
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY CONTRIBUTION
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · WORKING OUTPUTS
+      type: text
+    - name: text_005
+      label: Text · ↗ Shared trackers
+      type: text
+    - name: text_006
+      label: Text · ↗ Review rhythms
+      type: text
+    - name: text_007
+      label: Text · ↗ Organized references
+      type: text
+    - name: text_008
+      label: Text · ↗ Usable handovers
+      type: text
+    - name: text_009
+      label: Heading · The challenge
+      type: text
+    - name: text_010
+      label: 'Text · Tasks, assets, and decisions can drift apart as a project grows. '
+      type: text
+    - name: text_011
+      label: Heading · My contribution
+      type: text
+    - name: text_012
+      label: Text · I build and maintain project trackers, prepare review rhythms, or
+      type: text
+    - name: text_013
+      label: Heading · The working method
+      type: text
+    - name: text_014
+      label: Text · Use consistent statuses, attach relevant files to the task itself
+      type: text
+    - name: text_015
+      label: Heading · What a useful system looks like
+      type: text
+    - name: text_016
+      label: Text · Someone joining the project can understand its current state. A t
+      type: text
+    - name: text_017
+      label: 'Text · This working method is illustrated by the named project examples '
+      type: text
+    - name: text_018
+      label: Heading · Where this shows up in my work
+      type: text
+    - name: text_019
+      label: Text · Substance Fund — see the project contribution ↗
+      type: text
+    - name: link_020
+      label: 'Link destination · '
+      type: string
+    - name: text_021
+      label: Text · Nordic Tech Week — see the project contribution ↗
+      type: text
+    - name: link_022
+      label: 'Link destination · '
+      type: string
+    - name: text_023
+      label: Text · RECOGNIZE THIS CHALLENGE?
+      type: text
+    - name: text_024
+      label: Heading · Let’s talk about what your team needs.
+      type: text
+    - name: text_025
+      label: Text · Share the goal, the current stage, and the part that feels stuck.
+      type: text
+    - name: text_026
+      label: Text · Start a project conversation ↗
+      type: text
+    - name: link_027
+      label: 'Link destination · '
+      type: string
+- name: page-project-dalton-mills
+  label: Dalton Mills
+  type: file
+  path: content/pages/project-dalton-mills.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Dalton Mills Making each website review lead to the next decision.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All project experience
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · Technology / Website delivery
+      type: text
+    - name: text_004
+      label: Text · In progress · October 2026
+      type: text
+    - name: text_005
+      label: Heading · Dalton Mills
+      type: text
+    - name: text_006
+      label: Text · Making each website review lead to the next decision.
+      type: text
+    - name: text_007
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+  - name: section_02
+    label: What needed to happen
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY ROLE
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · PROJECT CONTEXT
+      type: text
+    - name: text_005
+      label: Text · Technology / Website delivery
+      type: text
+    - name: text_006
+      label: Text · Discuss a similar challenge ↗
+      type: text
+    - name: link_007
+      label: 'Link destination · '
+      type: string
+    - name: text_008
+      label: Heading · What needed to happen
+      type: text
+    - name: text_009
+      label: 'Text · A website refresh needs clear stages: strategy, visual direction,'
+      type: text
+    - name: text_010
+      label: Heading · What I took ownership of
+      type: text
+    - name: text_011
+      label: Text · I coordinate the project schedule, client communication, internal
+      type: text
+    - name: text_012
+      label: Text · Organized the presentation and review sequence with client and in
+      type: text
+    - name: text_013
+      label: Text · Shared review files and requested consolidated, detailed feedback
+      type: text
+    - name: text_014
+      label: Text · Translated internal calls into owners, next steps and review chec
+      type: text
+    - name: text_015
+      label: Heading · What the work produced
+      type: text
+    - name: text_016
+      label: Text · An active review cadence, shared project references and named nex
+      type: text
+    - name: text_017
+      label: Heading · What this means for your team
+      type: text
+    - name: text_018
+      label: 'Text · Useful reviews need a clear purpose: what is being shown, what ne'
+      type: text
+    - name: text_019
+      label: Text · YOUR NEXT PROJECT
+      type: text
+    - name: text_020
+      label: Heading · Need someone to connect the moving parts?
+      type: text
+    - name: text_021
+      label: Text · Tell me the goal, the people involved and the decision that needs
+      type: text
+    - name: text_022
+      label: Text · Talk about your team ↗
+      type: text
+    - name: link_023
+      label: 'Link destination · '
+      type: string
+- name: page-project-dirty-jobs
+  label: Dirty Jobs / VSC Ventures
+  type: file
+  path: content/pages/project-dirty-jobs.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Dirty Jobs / VSC Ventures Connecting the website, the event and the content.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All project experience
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · Venture capital / Physical AI
+      type: text
+    - name: text_004
+      label: Text · Event delivery + ongoing content
+      type: text
+    - name: text_005
+      label: Heading · Dirty Jobs / VSC Ventures
+      type: text
+    - name: text_006
+      label: Text · Connecting the website, the event and the content.
+      type: text
+    - name: text_007
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+  - name: section_02
+    label: What needed to happen
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY ROLE
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · PROJECT CONTEXT
+      type: text
+    - name: text_005
+      label: Text · Venture capital / Physical AI
+      type: text
+    - name: text_006
+      label: Text · Discuss a similar challenge ↗
+      type: text
+    - name: link_007
+      label: 'Link destination · '
+      type: string
+    - name: text_008
+      label: Heading · What needed to happen
+      type: text
+    - name: text_009
+      label: Text · A venture-backed event brings together website updates, speaker i
+      type: text
+    - name: text_010
+      label: Heading · What I took ownership of
+      type: text
+    - name: text_011
+      label: Text · I coordinated client updates, asset reviews, website-related foll
+      type: text
+    - name: text_012
+      label: Text · Kept video reviews moving with specific approval requests and nex
+      type: text
+    - name: text_013
+      label: Text · Coordinated event assets and website/content priorities across di
+      type: text
+    - name: text_014
+      label: 'Text · Followed up on source recordings needed to plan the next content '
+      type: text
+    - name: text_015
+      label: Heading · What the work produced
+      type: text
+    - name: text_016
+      label: Text · Coordinated event deliverables and an ongoing review and source-f
+      type: text
+    - name: text_017
+      label: Heading · What this means for your team
+      type: text
+    - name: text_018
+      label: Text · Event delivery and content production are connected. A clear sour
+      type: text
+    - name: text_019
+      label: Text · Visit the public project website ↗
+      type: text
+    - name: link_020
+      label: 'Link destination · '
+      type: string
+    - name: text_021
+      label: Text · YOUR NEXT PROJECT
+      type: text
+    - name: text_022
+      label: Heading · Need someone to connect the moving parts?
+      type: text
+    - name: text_023
+      label: Text · Tell me the goal, the people involved and the decision that needs
+      type: text
+    - name: text_024
+      label: Text · Talk about your team ↗
+      type: text
+    - name: link_025
+      label: 'Link destination · '
+      type: string
+- name: page-project-fervent
+  label: Fervent
+  type: file
+  path: content/pages/project-fervent.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Fervent Keeping website decisions and business assets connected.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All project experience
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · Financial services / Accounting advisory
+      type: text
+    - name: text_004
+      label: Text · Website + asset reviews in progress
+      type: text
+    - name: text_005
+      label: Heading · Fervent
+      type: text
+    - name: text_006
+      label: Text · Keeping website decisions and business assets connected.
+      type: text
+    - name: text_007
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+  - name: section_02
+    label: What needed to happen
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY ROLE
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · PROJECT CONTEXT
+      type: text
+    - name: text_005
+      label: Text · Financial services / Accounting advisory
+      type: text
+    - name: text_006
+      label: Text · Discuss a similar challenge ↗
+      type: text
+    - name: link_007
+      label: 'Link destination · '
+      type: string
+    - name: text_008
+      label: Heading · What needed to happen
+      type: text
+    - name: text_009
+      label: Text · A brand and website engagement can expand into templates, present
+      type: text
+    - name: text_010
+      label: Heading · What I took ownership of
+      type: text
+    - name: text_011
+      label: Text · I coordinate client reviews, consolidate website feedback, mainta
+      type: text
+    - name: text_012
+      label: Text · Tracked feedback across homepage, service pages and related websi
+      type: text
+    - name: text_013
+      label: Text · Organized the asset inventory into reviewable deliverables and sh
+      type: text
+    - name: text_014
+      label: Text · Connected client updates, team priorities and handover preparatio
+      type: text
+    - name: text_015
+      label: Heading · What the work produced
+      type: text
+    - name: text_016
+      label: Text · A maintained asset checklist, linked review files and a coordinat
+      type: text
+    - name: text_017
+      label: Heading · What this means for your team
+      type: text
+    - name: text_018
+      label: Text · A shared inventory turns a broad request into work that can be as
+      type: text
+    - name: text_019
+      label: Text · YOUR NEXT PROJECT
+      type: text
+    - name: text_020
+      label: Heading · Need someone to connect the moving parts?
+      type: text
+    - name: text_021
+      label: Text · Tell me the goal, the people involved and the decision that needs
+      type: text
+    - name: text_022
+      label: Text · Talk about your team ↗
+      type: text
+    - name: link_023
+      label: 'Link destination · '
+      type: string
+- name: page-project-fintheon
+  label: Fintheon
+  type: file
+  path: content/pages/project-fintheon.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Fintheon From launch brief to a usable video handover.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All project experience
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · Launch communications / Video
+      type: text
+    - name: text_004
+      label: Text · Creative delivery completed
+      type: text
+    - name: text_005
+      label: Heading · Fintheon
+      type: text
+    - name: text_006
+      label: Text · From launch brief to a usable video handover.
+      type: text
+    - name: text_007
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+  - name: section_02
+    label: What needed to happen
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY ROLE
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · PROJECT CONTEXT
+      type: text
+    - name: text_005
+      label: Text · Launch communications / Video
+      type: text
+    - name: text_006
+      label: Text · Discuss a similar challenge ↗
+      type: text
+    - name: link_007
+      label: 'Link destination · '
+      type: string
+    - name: text_008
+      label: Heading · What needed to happen
+      type: text
+    - name: text_009
+      label: Text · A launch video needs a coherent path through moodboard, script, w
+      type: text
+    - name: text_010
+      label: Heading · What I took ownership of
+      type: text
+    - name: text_011
+      label: 'Text · I coordinated reviews and client communication, and prepared the '
+      type: text
+    - name: text_012
+      label: Text · Organized review calls and communication between the client and v
+      type: text
+    - name: text_013
+      label: Text · Kept feedback connected to the script and video-review stages.
+      type: text
+    - name: text_014
+      label: Text · Prepared handover documentation with moodboard and final-video re
+      type: text
+    - name: text_015
+      label: Heading · What the work produced
+      type: text
+    - name: text_016
+      label: Text · Completed launch-video delivery supported by an organized handove
+      type: text
+    - name: text_017
+      label: Heading · What this means for your team
+      type: text
+    - name: text_018
+      label: Text · Closing a creative project means making its final work easy to fi
+      type: text
+    - name: text_019
+      label: Text · YOUR NEXT PROJECT
+      type: text
+    - name: text_020
+      label: Heading · Need someone to connect the moving parts?
+      type: text
+    - name: text_021
+      label: Text · Tell me the goal, the people involved and the decision that needs
+      type: text
+    - name: text_022
+      label: Text · Talk about your team ↗
+      type: text
+    - name: link_023
+      label: 'Link destination · '
+      type: string
+- name: page-project-nordic-tech-week
+  label: Nordic Tech Week
+  type: file
+  path: content/pages/project-nordic-tech-week.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Nordic Tech Week One event. Many assets. A shared finish line.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All project experience
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · Founder community / Event ecosystem
+      type: text
+    - name: text_004
+      label: Text · Handover coordinated
+      type: text
+    - name: text_005
+      label: Heading · Nordic Tech Week
+      type: text
+    - name: text_006
+      label: Text · One event. Many assets. A shared finish line.
+      type: text
+    - name: text_007
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+  - name: section_02
+    label: What needed to happen
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY ROLE
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · PROJECT CONTEXT
+      type: text
+    - name: text_005
+      label: Text · Founder community / Event ecosystem
+      type: text
+    - name: text_006
+      label: Text · Discuss a similar challenge ↗
+      type: text
+    - name: link_007
+      label: 'Link destination · '
+      type: string
+    - name: text_008
+      label: Heading · What needed to happen
+      type: text
+    - name: text_009
+      label: Text · An event identity has to work across speaker announcements, banne
+      type: text
+    - name: text_010
+      label: Heading · What I took ownership of
+      type: text
+    - name: text_011
+      label: Text · I coordinated client communication, reviews and final-file organi
+      type: text
+    - name: text_012
+      label: Text · Kept client updates connected to the deliverables being reviewed.
+      type: text
+    - name: text_013
+      label: Text · Coordinated feedback and follow-through across speaker assets, ba
+      type: text
+    - name: text_014
+      label: Text · Brought the final links and files together in a single handover d
+      type: text
+    - name: text_015
+      label: Heading · What the work produced
+      type: text
+    - name: text_016
+      label: 'Text · A consolidated handover page giving the client a single place to '
+      type: text
+    - name: text_017
+      label: Heading · What this means for your team
+      type: text
+    - name: text_018
+      label: Text · For a founder community, a consistent event experience depends on
+      type: text
+    - name: text_019
+      label: Text · Visit the public project website ↗
+      type: text
+    - name: link_020
+      label: 'Link destination · '
+      type: string
+    - name: text_021
+      label: Text · YOUR NEXT PROJECT
+      type: text
+    - name: text_022
+      label: Heading · Need someone to connect the moving parts?
+      type: text
+    - name: text_023
+      label: Text · Tell me the goal, the people involved and the decision that needs
+      type: text
+    - name: text_024
+      label: Text · Talk about your team ↗
+      type: text
+    - name: link_025
+      label: 'Link destination · '
+      type: string
+- name: page-project-substance-fund
+  label: Substance Fund
+  type: file
+  path: content/pages/project-substance-fund.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Substance Fund A fund brand, website and deck—with a clear handover.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← All project experience
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · Venture capital / Fund brand
+      type: text
+    - name: text_004
+      label: Text · Handover walkthrough coordinated
+      type: text
+    - name: text_005
+      label: Heading · Substance Fund
+      type: text
+    - name: text_006
+      label: Text · A fund brand, website and deck—with a clear handover.
+      type: text
+    - name: text_007
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+  - name: section_02
+    label: What needed to happen
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · MY ROLE
+      type: text
+    - name: text_002
+      label: Text · Project management
+      type: text
+    - name: text_003
+      label: Text · & communications
+      type: text
+    - name: text_004
+      label: Text · PROJECT CONTEXT
+      type: text
+    - name: text_005
+      label: Text · Venture capital / Fund brand
+      type: text
+    - name: text_006
+      label: Text · Discuss a similar challenge ↗
+      type: text
+    - name: link_007
+      label: 'Link destination · '
+      type: string
+    - name: text_008
+      label: Heading · What needed to happen
+      type: text
+    - name: text_009
+      label: Text · Brand decisions, website content and fundraising materials need t
+      type: text
+    - name: text_010
+      label: Heading · What I took ownership of
+      type: text
+    - name: text_011
+      label: 'Text · I managed client communication, review coordination and handover '
+      type: text
+    - name: text_012
+      label: Text · Shared design updates that connected client feedback to the lates
+      type: text
+    - name: text_013
+      label: Text · Coordinated the handover walkthrough and organized supporting ref
+      type: text
+    - name: text_014
+      label: 'Text · Requested the receiving developers’ contact details so the final '
+      type: text
+    - name: text_015
+      label: Heading · What the work produced
+      type: text
+    - name: text_016
+      label: Text · An organized handover document and walkthrough covering the engag
+      type: text
+    - name: text_017
+      label: Heading · What this means for your team
+      type: text
+    - name: text_018
+      label: Text · The delivery is only useful when the next person knows where to f
+      type: text
+    - name: text_019
+      label: Text · YOUR NEXT PROJECT
+      type: text
+    - name: text_020
+      label: Heading · Need someone to connect the moving parts?
+      type: text
+    - name: text_021
+      label: Text · Tell me the goal, the people involved and the decision that needs
+      type: text
+    - name: text_022
+      label: Text · Talk about your team ↗
+      type: text
+    - name: link_023
+      label: 'Link destination · '
+      type: string
+- name: page-scope-change-without-the-drama
+  label: The brief changed. Now what?
+  type: file
+  path: content/pages/scope-change-without-the-drama.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: The brief changed. Now what?
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · PROJECT MANAGEMENT / FIELD NOTE 07
+      type: text
+    - name: text_004
+      label: Heading · The brief changed. Now what?
+      type: text
+    - name: text_005
+      label: Text · A calm, 4-step approach to handling new requests.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 2 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 07
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / Understand the request bef
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / Understand the request before defending the plan.
+      type: text
+    - name: link_005
+      label: Link destination · 02  02 / Compare it with the agreed
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / Compare it with the agreed work.
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / Make the trade-offs visibl
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / Make the trade-offs visible.
+      type: text
+    - name: link_011
+      label: Link destination · 04  04 / Record the new agreement.
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · 04 / Record the new agreement.
+      type: text
+    - name: link_014
+      label: Link destination · 05  A useful message to adapt.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · A useful message to adapt.
+      type: text
+  - name: section_03
+    label: 01 / Understand the request before defending the plan.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / Understand the request before defending the plan.
+      type: text
+    - name: text_002
+      label: Text · A new request often signals a need that was not clear at the star
+      type: text
+    - name: text_003
+      label: Heading · 02 / Compare it with the agreed work.
+      type: text
+    - name: text_004
+      label: Text · Check whether the request changes an existing deliverable or intr
+      type: text
+    - name: text_005
+      label: Heading · 03 / Make the trade-offs visible.
+      type: text
+    - name: text_006
+      label: Text · Ask the people doing the work what the change affects. It may alt
+      type: text
+    - name: text_007
+      label: Heading · 04 / Record the new agreement.
+      type: text
+    - name: text_008
+      label: Text · Once the decision is made, update the tracker, brief, and relevan
+      type: text
+    - name: text_009
+      label: Heading · A useful message to adapt.
+      type: text
+    - name: text_010
+      label: Text · “This adds a new deliverable to the current scope. I’ll confirm t
+      type: text
+    - name: text_011
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_012
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_013
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: One project. 3 different conversations. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 08
+      type: text
+    - name: link_002
+      label: Link destination · One project. 3 different conversati
+      type: string
+    - name: text_003
+      label: Heading · One project. 3 different conversations. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-six-statuses-that-tell-the-truth
+  label: 6 project statuses. Zero guesswork.
+  type: file
+  path: content/pages/six-statuses-that-tell-the-truth.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: 6 project statuses. Zero guesswork.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · OPERATIONS / FIELD NOTE 05
+      type: text
+    - name: text_004
+      label: Heading · 6 project statuses. Zero guesswork.
+      type: text
+    - name: text_005
+      label: Text · How to make a tracker describe the work instead of decorate it.
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 2 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 05
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / Not started is a useful tr
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / Not started is a useful truth.
+      type: text
+    - name: link_005
+      label: Link destination · 02  02 / Scoping means defining the
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / Scoping means defining the work.
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / In progress needs evidence
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / In progress needs evidence.
+      type: text
+    - name: link_011
+      label: Link destination · 04  04 / Under review needs a revie
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · 04 / Under review needs a reviewer.
+      type: text
+    - name: link_014
+      label: Link destination · 05  05 / Done needs a definition.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · 05 / Done needs a definition.
+      type: text
+    - name: link_017
+      label: Link destination · 06  06 / Archived is not the same a
+      type: string
+    - name: text_018
+      label: Text · 06
+      type: text
+    - name: text_019
+      label: Text · 06 / Archived is not the same as finished.
+      type: text
+  - name: section_03
+    label: 01 / Not started is a useful truth.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / Not started is a useful truth.
+      type: text
+    - name: text_002
+      label: Text · Use Not Started when the task is known but work has not begun. Re
+      type: text
+    - name: text_003
+      label: Heading · 02 / Scoping means defining the work.
+      type: text
+    - name: text_004
+      label: 'Text · Scoping is for questions about requirements, inputs, boundaries, '
+      type: text
+    - name: text_005
+      label: Heading · 03 / In progress needs evidence.
+      type: text
+    - name: text_006
+      label: 'Text · In Progress should mean someone is actively producing the agreed '
+      type: text
+    - name: text_007
+      label: Heading · 04 / Under review needs a reviewer.
+      type: text
+    - name: text_008
+      label: Text · Under Review means there is something ready for another person to
+      type: text
+    - name: text_009
+      label: Heading · 05 / Done needs a definition.
+      type: text
+    - name: text_010
+      label: Text · Agree what completion means for the task. A file may need approva
+      type: text
+    - name: text_011
+      label: Heading · 06 / Archived is not the same as finished.
+      type: text
+    - name: text_012
+      label: Text · Archive work that no longer belongs in the active view, including
+      type: text
+    - name: text_013
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_014
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_015
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_016
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: 4 questions before you call it a brief. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 06
+      type: text
+    - name: link_002
+      label: Link destination · 4 questions before you call it a br
+      type: string
+    - name: text_003
+      label: Heading · 4 questions before you call it a brief. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-sketch-decks
+  label: Sketch Decks
+  type: file
+  path: content/pages/sketch-decks.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Cynthia’s Sketch Desk.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE SKETCH DESK / THINKING IN PROGRESS
+      type: text
+    - name: text_002
+      label: Heading · Cynthia’s
+      type: text
+    - name: text_003
+      label: Text · Sketch Desk.
+      type: text
+    - name: text_004
+      label: Text · ROUGH EDGES
+      type: text
+    - name: text_005
+      label: Text · WELCOME ✳
+      type: text
+    - name: text_006
+      label: Text · A place for the almost-ideas. The “wait, what if…” moments. The l
+      type: text
+    - name: text_007
+      label: 'Text · Illustrative portfolio sketches · These starter decks explain my '
+      type: text
+    - name: text_008
+      label: Text · Start with the roadmap. Follow the rough edges. ↓
+      type: text
+    - name: link_009
+      label: 'Link destination · '
+      type: string
+  - name: section_02
+    label: Let’s see where this goes.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · A SMALL IDEA. A LITTLE MOMENTUM.
+      type: text
+    - name: text_002
+      label: Heading · Let’s see where this goes.
+      type: text
+    - name: text_003
+      label: Text · Send an idea flying ↗
+      type: text
+    - name: text_004
+      label: Text · Shuffle the thoughts ⤨
+      type: text
+    - name: text_005
+      label: Text · Start fresh ↺
+      type: text
+    - name: text_006
+      label: Text · a question → a rough plan → the next move
+      type: text
+    - name: text_007
+      label: Text · An idea is waiting on the desk. Give it a nudge.
+      type: text
+    - name: text_008
+      label: Text · Click. Explore. Leave room for a little play.
+      type: text
+  - name: section_03
+    label: The whole project. Spread across the desk.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ONE POSSIBLE ROUTE / ONBOARDING → HANDOFF
+      type: text
+    - name: text_002
+      label: Heading · The whole project.
+      type: text
+    - name: text_003
+      label: Text · Spread across the desk.
+      type: text
+    - name: text_004
+      label: Text · An illustrative working map. No invented dates or client results.
+      type: text
+    - name: text_005
+      label: Text · ↳ start here
+      type: text
+    - name: text_006
+      label: Text · perfect plan
+      type: text
+    - name: text_007
+      label: Text · useful first route!
+      type: text
+    - name: text_008
+      label: Text · 01 /
+      type: text
+    - name: text_009
+      label: Heading · Onboarding call
+      type: text
+    - name: text_010
+      label: Text · Listen first. What is the real problem?
+      type: text
+    - name: text_011
+      label: Text · look closer +
+      type: text
+    - name: text_012
+      label: 'Text · At the table:'
+      type: text
+    - name: text_013
+      label: Text · Client + PM
+      type: text
+    - name: text_014
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_015
+      label: Text · Goal / audience / constraints
+      type: text
+    - name: text_016
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_017
+      label: Text · What does success mean?
+      type: text
+    - name: text_018
+      label: Text · 02 /
+      type: text
+    - name: text_019
+      label: Heading · Brief + scope
+      type: text
+    - name: text_020
+      label: Text · Turn the call into an agreement.
+      type: text
+    - name: text_021
+      label: Text · look closer +
+      type: text
+    - name: text_022
+      label: 'Text · At the table:'
+      type: text
+    - name: text_023
+      label: Text · PM + approver
+      type: text
+    - name: text_024
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_025
+      label: Text · Deliverables / exclusions / inputs
+      type: text
+    - name: text_026
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_027
+      label: Text · Has the direction been agreed?
+      type: text
+    - name: text_028
+      label: Text · 03 /
+      type: text
+    - name: text_029
+      label: Heading · Map the route
+      type: text
+    - name: text_030
+      label: Text · Break the work into useful pieces.
+      type: text
+    - name: text_031
+      label: Text · look closer +
+      type: text
+    - name: text_032
+      label: 'Text · At the table:'
+      type: text
+    - name: text_033
+      label: Text · PM + contributors
+      type: text
+    - name: text_034
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_035
+      label: Text · Milestones / owners / dependencies
+      type: text
+    - name: text_036
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_037
+      label: Text · What could block the next step?
+      type: text
+    - name: text_038
+      label: Text · 04 /
+      type: text
+    - name: text_039
+      label: Heading · Make + coordinate
+      type: text
+    - name: text_040
+      label: Text · Give the work a visible rhythm.
+      type: text
+    - name: text_041
+      label: Text · look closer +
+      type: text
+    - name: text_042
+      label: 'Text · At the table:'
+      type: text
+    - name: text_043
+      label: Text · Contributors + PM
+      type: text
+    - name: text_044
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_045
+      label: Text · Working links / updates / decisions
+      type: text
+    - name: text_046
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_047
+      label: Text · Does everyone have the current context?
+      type: text
+    - name: text_048
+      label: Text · 05 /
+      type: text
+    - name: text_049
+      label: Heading · Review + revise
+      type: text
+    - name: text_050
+      label: Text · Collect feedback. Resolve contradictions.
+      type: text
+    - name: text_051
+      label: Text · look closer +
+      type: text
+    - name: text_052
+      label: 'Text · At the table:'
+      type: text
+    - name: text_053
+      label: Text · Reviewer + PM + team
+      type: text
+    - name: text_054
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_055
+      label: Text · One review log / approved direction
+      type: text
+    - name: text_056
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_057
+      label: Text · Approved? Move on. If not, revise.
+      type: text
+    - name: text_058
+      label: Text · 06 /
+      type: text
+    - name: text_059
+      label: Heading · Quality check
+      type: text
+    - name: text_060
+      label: Text · Check the work against the brief.
+      type: text
+    - name: text_061
+      label: Text · look closer +
+      type: text
+    - name: text_062
+      label: 'Text · At the table:'
+      type: text
+    - name: text_063
+      label: Text · Team + final approver
+      type: text
+    - name: text_064
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_065
+      label: Text · Content / formats / access / acceptance
+      type: text
+    - name: text_066
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_067
+      label: Text · Is the package ready to release?
+      type: text
+    - name: text_068
+      label: Text · 07 /
+      type: text
+    - name: text_069
+      label: Heading · Handoff
+      type: text
+    - name: text_070
+      label: Text · Make the next person ready.
+      type: text
+    - name: text_071
+      label: Text · look closer +
+      type: text
+    - name: text_072
+      label: 'Text · At the table:'
+      type: text
+    - name: text_073
+      label: Text · PM + receiving team
+      type: text
+    - name: text_074
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_075
+      label: Text · Final files / guide / open items
+      type: text
+    - name: text_076
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_077
+      label: Text · Can they find, understand, and use it?
+      type: text
+    - name: text_078
+      label: Text · 08 /
+      type: text
+    - name: text_079
+      label: Heading · Close + learn
+      type: text
+    - name: text_080
+      label: Text · Archive the useful history.
+      type: text
+    - name: text_081
+      label: Text · look closer +
+      type: text
+    - name: text_082
+      label: 'Text · At the table:'
+      type: text
+    - name: text_083
+      label: Text · PM + team
+      type: text
+    - name: text_084
+      label: 'Text · On the desk:'
+      type: text
+    - name: text_085
+      label: Text · Closeout / lessons / next improvement
+      type: text
+    - name: text_086
+      label: 'Text · Before moving on:'
+      type: text
+    - name: text_087
+      label: Text · What should change next time?
+      type: text
+    - name: text_088
+      label: Text · ↺ REVIEW LOOP
+      type: text
+    - name: text_089
+      label: Text · Feedback → clarify → revise → review again.
+      type: text
+    - name: text_090
+      label: Text · Approval is a decision, not a guess.
+      type: text
+    - name: text_091
+      label: Text · ⚑ WATCH THIS
+      type: text
+    - name: text_092
+      label: Text · Missing input? Name the blocker.
+      type: text
+    - name: text_093
+      label: Text · Scope changed? Revisit the agreement.
+      type: text
+    - name: text_094
+      label: Text · DO NOT LOSE
+      type: text
+    - name: text_095
+      label: Text · The decision. The current file.
+      type: text
+    - name: text_096
+      label: Text · The person who owns the next move.
+      type: text
+  - name: section_04
+    label: How do we get there from here?
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · DESK VIEW / 08 OPEN NOTEBOOKS
+      type: text
+    - name: text_002
+      label: Text · A LITTLE UNFINISHED. ON PURPOSE.
+      type: text
+    - name: text_003
+      label: Text · 01 / THE ROADMAP
+      type: text
+    - name: text_004
+      label: Heading · How do we
+      type: text
+    - name: text_005
+      label: Text · get there
+      type: text
+    - name: text_006
+      label: Text · from here?
+      type: text
+    - name: text_007
+      label: Text · ?
+      type: text
+    - name: text_008
+      label: Text · ↝
+      type: text
+    - name: text_009
+      label: Text · →
+      type: text
+    - name: text_010
+      label: Text · ↝
+      type: text
+    - name: text_011
+      label: Text · ✓
+      type: text
+    - name: text_012
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_013
+      label: Text · Open the deck ↗
+      type: text
+    - name: text_014
+      label: Text · 02 / HOW I THINK
+      type: text
+    - name: text_015
+      label: Heading · One big brief.
+      type: text
+    - name: text_016
+      label: Text · A few better
+      type: text
+    - name: text_017
+      label: Text · questions.
+      type: text
+    - name: text_018
+      label: Text · why?
+      type: text
+    - name: text_019
+      label: Text · who?
+      type: text
+    - name: text_020
+      label: Text · what next?
+      type: text
+    - name: text_021
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_022
+      label: Text · Follow the thinking ↗
+      type: text
+    - name: text_023
+      label: Text · 03 / WORK IN PROGRESS
+      type: text
+    - name: text_024
+      label: Heading · Not quite
+      type: text
+    - name: text_025
+      label: Text · there.
+      type: text
+    - name: text_026
+      label: Text · Getting closer.
+      type: text
+    - name: text_027
+      label: Text · first thought
+      type: text
+    - name: text_028
+      label: Text · ↳ try this instead
+      type: text
+    - name: text_029
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_030
+      label: Text · See the rough edges ↗
+      type: text
+    - name: text_031
+      label: Text · 04 / THE FIRST CONVERSATION
+      type: text
+    - name: text_032
+      label: Heading · Onboarding.
+      type: text
+    - name: text_033
+      label: Text · Listen before
+      type: text
+    - name: text_034
+      label: Text · you plan.
+      type: text
+    - name: text_035
+      label: Text · ↳ ask why?
+      type: text
+    - name: text_036
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_037
+      label: Text · Open the notebook ↗
+      type: text
+    - name: text_038
+      label: Text · 05 / THE WORKING AGREEMENT
+      type: text
+    - name: text_039
+      label: Heading · A brief.
+      type: text
+    - name: text_040
+      label: Text · A vague wish.
+      type: text
+    - name: text_041
+      label: Text · A shared direction.
+      type: text
+    - name: text_042
+      label: Text · ✓ owner? input?
+      type: text
+    - name: text_043
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_044
+      label: Text · Open the notebook ↗
+      type: text
+    - name: text_045
+      label: Text · 06 / THE FEEDBACK LOOP
+      type: text
+    - name: text_046
+      label: Heading · Review. Revise.
+      type: text
+    - name: text_047
+      label: Text · Wait—which
+      type: text
+    - name: text_048
+      label: Text · version?
+      type: text
+    - name: text_049
+      label: Text · ↺ one more pass
+      type: text
+    - name: text_050
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_051
+      label: Text · Open the notebook ↗
+      type: text
+    - name: text_052
+      label: Text · 07 / THE HANDOFF
+      type: text
+    - name: text_053
+      label: Heading · It’s finished.
+      type: text
+    - name: text_054
+      label: Text · Can someone
+      type: text
+    - name: text_055
+      label: Text · else use it?
+      type: text
+    - name: text_056
+      label: Text · [ files ] → you
+      type: text
+    - name: text_057
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_058
+      label: Text · Open the notebook ↗
+      type: text
+    - name: text_059
+      label: Text · 08 / THE CLOSEOUT
+      type: text
+    - name: text_060
+      label: Heading · Keep the lesson.
+      type: text
+    - name: text_061
+      label: Text · Lose the
+      type: text
+    - name: text_062
+      label: Text · repeat problem.
+      type: text
+    - name: text_063
+      label: Text · ✳ next time
+      type: text
+    - name: text_064
+      label: Text · 5 SKETCHES
+      type: text
+    - name: text_065
+      label: Text · Open the notebook ↗
+      type: text
+    - name: text_066
+      label: Text · ↳ Click a notebook to turn its pages.
+      type: text
+    - name: text_067
+      label: Text · No perfect first drafts required.
+      type: text
+  - name: section_05
+    label: A few thoughts pinned to the wall.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · LOOSE NOTES / THINGS WORTH KEEPING IN VIEW
+      type: text
+    - name: text_002
+      label: Heading · A few thoughts
+      type: text
+    - name: text_003
+      label: Text · pinned to the wall.
+      type: text
+    - name: text_004
+      label: Text · Open a note to see the thinking underneath.
+      type: text
+    - name: text_005
+      label: Text · QUESTION / 01
+      type: text
+    - name: text_006
+      label: Text · What are we
+      type: text
+    - name: text_007
+      label: Text · actually solving?
+      type: text
+    - name: text_008
+      label: Text · +
+      type: text
+    - name: text_009
+      label: Text · A deliverable is a thing we make. The brief should also explain w
+      type: text
+    - name: text_010
+      label: Text · REMINDER / 02
+      type: text
+    - name: text_011
+      label: Text · Someone needs
+      type: text
+    - name: text_012
+      label: Text · to own the
+      type: text
+    - name: text_013
+      label: Text · next move.
+      type: text
+    - name: text_014
+      label: Text · +
+      type: text
+    - name: text_015
+      label: Text · Give each action a clear owner, an expected output, and the conte
+      type: text
+    - name: text_016
+      label: Text · WORKING THOUGHT / 03
+      type: text
+    - name: text_017
+      label: Text · Feedback needs
+      type: text
+    - name: text_018
+      label: Text · a landing place.
+      type: text
+    - name: text_019
+      label: Text · +
+      type: text
+    - name: text_020
+      label: Text · Bring comments back to the same version of the work. Resolve conf
+      type: text
+    - name: text_021
+      label: Text · DON’T FORGET / 04
+      type: text
+    - name: text_022
+      label: Text · Leave the next
+      type: text
+    - name: text_023
+      label: Text · person ready.
+      type: text
+    - name: text_024
+      label: Text · +
+      type: text
+    - name: text_025
+      label: 'Text · A useful handover answers three questions: where are the files, w'
+      type: text
+  - name: section_06
+    label: A rough idea is a useful place to start.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · FROM THE SKETCH DESK TO THE REAL WORK
+      type: text
+    - name: text_002
+      label: Heading · A rough idea is
+      type: text
+    - name: text_003
+      label: Text · a useful place to start.
+      type: text
+    - name: text_004
+      label: 'Text · See how these questions shape my project management practice, or '
+      type: text
+    - name: text_005
+      label: Text · See the work behind the thinking ↗
+      type: text
+    - name: link_006
+      label: 'Link destination · '
+      type: string
+    - name: text_007
+      label: Text · Talk through an idea ↗
+      type: text
+    - name: link_008
+      label: 'Link destination · '
+      type: string
+  - name: section_07
+    label: ''
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · SKETCH DECK
+      type: text
+    - name: text_002
+      label: Text · Close ×
+      type: text
+    - name: text_003
+      label: Text · ← Previous
+      type: text
+    - name: text_004
+      label: Text · Next →
+      type: text
+    - name: text_005
+      label: 'Text · Illustrative working sketch · Use the arrows or your keyboard to '
+      type: text
+- name: page-the-five-line-project-update
+  label: The 5-line update people actually read.
+  type: file
+  path: content/pages/the-five-line-project-update.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: The 5-line update people actually read.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · COMMUNICATIONS / FIELD NOTE 04
+      type: text
+    - name: text_004
+      label: Heading · The 5-line update people actually read.
+      type: text
+    - name: text_005
+      label: Text · A repeatable structure for progress, decisions, risks, and the ne
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 2 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 04
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / Lead with what changed.
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / Lead with what changed.
+      type: text
+    - name: link_005
+      label: Link destination · 02  02 / Make the consequence clear
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / Make the consequence clear.
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / Name the next action.
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / Name the next action.
+      type: text
+    - name: link_011
+      label: Link destination · 04  04 / Surface the decision or ri
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · 04 / Surface the decision or risk.
+      type: text
+    - name: link_014
+      label: Link destination · 05  05 / Link the source of truth.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · 05 / Link the source of truth.
+      type: text
+  - name: section_03
+    label: 01 / Lead with what changed.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / Lead with what changed.
+      type: text
+    - name: text_002
+      label: Text · An update earns attention when it tells the reader something new.
+      type: text
+    - name: text_003
+      label: Heading · 02 / Make the consequence clear.
+      type: text
+    - name: text_004
+      label: Text · Explain why the change matters to the project. A revised headline
+      type: text
+    - name: text_005
+      label: Heading · 03 / Name the next action.
+      type: text
+    - name: text_006
+      label: Text · Use a verb, an owner, and an output. “Design to review” leaves to
+      type: text
+    - name: text_007
+      label: Heading · 04 / Surface the decision or risk.
+      type: text
+    - name: text_008
+      label: Text · If progress depends on a missing input, say so directly. Describe
+      type: text
+    - name: text_009
+      label: Heading · 05 / Link the source of truth.
+      type: text
+    - name: text_010
+      label: Text · Finish with the current file or task. Link to the exact place a r
+      type: text
+    - name: text_011
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_012
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_013
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: 6 project statuses. Zero guesswork. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 05
+      type: text
+    - name: link_002
+      label: Link destination · 6 project statuses. Zero guesswork.
+      type: string
+    - name: text_003
+      label: Heading · 6 project statuses. Zero guesswork. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-three-layers-of-client-communication
+  label: One project. 3 different conversations.
+  type: file
+  path: content/pages/three-layers-of-client-communication.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: One project. 3 different conversations.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · ← Browse all 10 field notes
+      type: text
+    - name: link_002
+      label: 'Link destination · '
+      type: string
+    - name: text_003
+      label: Text · COMMUNICATIONS / FIELD NOTE 08
+      type: text
+    - name: text_004
+      label: Heading · One project. 3 different conversations.
+      type: text
+    - name: text_005
+      label: Text · Why clients, contributors, and project leads need different updat
+      type: text
+    - name: text_006
+      label: Text · Cynthia Udoh · 2 min read · Portfolio editorial draft
+      type: text
+    - name: text_007
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+    - name: text_008
+      label: Text · FIELD NOTE / 08
+      type: text
+    - name: text_009
+      label: Text · THE PRACTICE OF MOVING WORK FORWARD
+      type: text
+  - name: section_02
+    label: article-toc
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · IN THIS NOTE
+      type: text
+    - name: link_002
+      label: Link destination · 01  01 / The client needs confidenc
+      type: string
+    - name: text_003
+      label: Text · 01
+      type: text
+    - name: text_004
+      label: Text · 01 / The client needs confidence and a decision path.
+      type: text
+    - name: link_005
+      label: Link destination · 02  02 / The contributor needs acti
+      type: string
+    - name: text_006
+      label: Text · 02
+      type: text
+    - name: text_007
+      label: Text · 02 / The contributor needs actionable context.
+      type: text
+    - name: link_008
+      label: Link destination · 03  03 / The project lead needs dep
+      type: string
+    - name: text_009
+      label: Text · 03
+      type: text
+    - name: text_010
+      label: Text · 03 / The project lead needs dependencies.
+      type: text
+    - name: link_011
+      label: Link destination · 04  Keep one reality behind the dif
+      type: string
+    - name: text_012
+      label: Text · 04
+      type: text
+    - name: text_013
+      label: Text · Keep one reality behind the different messages.
+      type: text
+    - name: link_014
+      label: Link destination · 05  Before you send.
+      type: string
+    - name: text_015
+      label: Text · 05
+      type: text
+    - name: text_016
+      label: Text · Before you send.
+      type: text
+  - name: section_03
+    label: 01 / The client needs confidence and a decision path.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Heading · 01 / The client needs confidence and a decision path.
+      type: text
+    - name: text_002
+      label: Text · A client update should make the project understandable. Explain w
+      type: text
+    - name: text_003
+      label: Heading · 02 / The contributor needs actionable context.
+      type: text
+    - name: text_004
+      label: Text · The person making the work needs the exact task, the latest refer
+      type: text
+    - name: text_005
+      label: Heading · 03 / The project lead needs dependencies.
+      type: text
+    - name: text_006
+      label: Text · The person coordinating delivery needs to see risks across the wo
+      type: text
+    - name: text_007
+      label: Heading · Keep one reality behind the different messages.
+      type: text
+    - name: text_008
+      label: Text · Tailoring an update does not mean changing the facts. Use the sam
+      type: text
+    - name: text_009
+      label: Heading · Before you send.
+      type: text
+    - name: text_010
+      label: Text · Ask what the recipient needs to understand or do. Then remove det
+      type: text
+    - name: text_011
+      label: Text · PUT IT TO WORK
+      type: text
+    - name: text_012
+      label: Text · Choose one idea from this note and apply it to the next brief, up
+      type: text
+    - name: text_013
+      label: Text · Talk through a project with me ↗
+      type: text
+    - name: link_014
+      label: 'Link destination · '
+      type: string
+  - name: section_04
+    label: Done is a conversation, too. ↗
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · KEEP THE THREAD GOING / NOTE 09
+      type: text
+    - name: link_002
+      label: Link destination · Done is a conversation, too. ↗
+      type: string
+    - name: text_003
+      label: Heading · Done is a conversation, too. ↗
+      type: text
+    - name: text_004
+      label: Text · Browse all 10 notes
+      type: text
+    - name: link_005
+      label: 'Link destination · '
+      type: string
+- name: page-work
+  label: The work
+  type: file
+  path: content/pages/work.json
+  format: json
+  fields:
+  - name: title
+    label: Search & browser title
+    type: string
+  - name: description
+    label: Search description
+    type: text
+  - name: section_01
+    label: Your next project. Meet the experience behind it.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE PRACTICE / PROJECT MANAGEMENT & COMMUNICATIONS
+      type: text
+    - name: text_002
+      label: Heading · Your next project.
+      type: text
+    - name: text_003
+      label: Text · Meet the experience behind it.
+      type: text
+    - name: text_004
+      label: Text · Project delivery and communications for the venture and founder e
+      type: text
+    - name: text_005
+      label: Text · LET’S MOVE THIS FORWARD.
+      type: text
+  - name: section_02
+    label: Real projects. A clear part in each.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · SELECTED EXPERIENCE / DELIVERED WITH TONY & CO
+      type: text
+    - name: text_002
+      label: Heading · Real projects.
+      type: text
+    - name: text_003
+      label: Text · A clear part in each.
+      type: text
+    - name: text_004
+      label: Text · Fund brands, founder communities, event platforms and launch comm
+      type: text
+    - name: text_005
+      label: 'Text · My contribution: project management & communications at Tony & Co'
+      type: text
+    - name: link_006
+      label: Link destination · 01 / Founder community / Event ecos
+      type: string
+    - name: text_007
+      label: Text · 01 / Founder community / Event ecosystem
+      type: text
+    - name: text_008
+      label: Text · Nordic Tech Week
+      type: text
+    - name: text_009
+      label: Text · Handover coordinated
+      type: text
+    - name: text_010
+      label: Heading · One event. Many assets. A shared finish line.
+      type: text
+    - name: text_011
+      label: Text · I coordinated client communication, reviews and final-file organi
+      type: text
+    - name: text_012
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_013
+      label: 'Link destination · 02 / Venture capital / Physical AI '
+      type: string
+    - name: text_014
+      label: Text · 02 / Venture capital / Physical AI
+      type: text
+    - name: text_015
+      label: Text · Dirty Jobs / VSC Ventures
+      type: text
+    - name: text_016
+      label: Text · Event delivery + ongoing content
+      type: text
+    - name: text_017
+      label: Heading · Connecting the website, the event and the content.
+      type: text
+    - name: text_018
+      label: Text · I coordinated client updates, asset reviews, website-related foll
+      type: text
+    - name: text_019
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_020
+      label: Link destination · 03 / Venture capital / Fund brand S
+      type: string
+    - name: text_021
+      label: Text · 03 / Venture capital / Fund brand
+      type: text
+    - name: text_022
+      label: Text · Substance Fund
+      type: text
+    - name: text_023
+      label: Text · Handover walkthrough coordinated
+      type: text
+    - name: text_024
+      label: Heading · A fund brand, website and deck—with a clear handover.
+      type: text
+    - name: text_025
+      label: 'Text · I managed client communication, review coordination and handover '
+      type: text
+    - name: text_026
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_027
+      label: Link destination · 04 / Financial services / Accountin
+      type: string
+    - name: text_028
+      label: Text · 04 / Financial services / Accounting advisory
+      type: text
+    - name: text_029
+      label: Text · Fervent
+      type: text
+    - name: text_030
+      label: Text · Website + asset reviews in progress
+      type: text
+    - name: text_031
+      label: Heading · Keeping website decisions and business assets connected.
+      type: text
+    - name: text_032
+      label: Text · I coordinate client reviews, consolidate website feedback, mainta
+      type: text
+    - name: text_033
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_034
+      label: 'Link destination · 05 / Launch communications / Video '
+      type: string
+    - name: text_035
+      label: Text · 05 / Launch communications / Video
+      type: text
+    - name: text_036
+      label: Text · Fintheon
+      type: text
+    - name: text_037
+      label: Text · Creative delivery completed
+      type: text
+    - name: text_038
+      label: Heading · From launch brief to a usable video handover.
+      type: text
+    - name: text_039
+      label: 'Text · I coordinated reviews and client communication, and prepared the '
+      type: text
+    - name: text_040
+      label: Text · See my contribution ↗
+      type: text
+    - name: link_041
+      label: 'Link destination · 06 / Technology / Website delivery '
+      type: string
+    - name: text_042
+      label: Text · 06 / Technology / Website delivery
+      type: text
+    - name: text_043
+      label: Text · Dalton Mills
+      type: text
+    - name: text_044
+      label: Text · In progress · October 2026
+      type: text
+    - name: text_045
+      label: Heading · Making each website review lead to the next decision.
+      type: text
+    - name: text_046
+      label: Text · I coordinate the project schedule, client communication, internal
+      type: text
+    - name: text_047
+      label: Text · See my contribution ↗
+      type: text
+  - name: section_03
+    label: The ambition is clear. The next step isn’t.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · DOES THIS SOUND FAMILIAR?
+      type: text
+    - name: text_002
+      label: Heading · The ambition is clear.
+      type: text
+    - name: text_003
+      label: Text · The next step isn’t.
+      type: text
+    - name: link_004
+      label: Link destination · 01 / TOO MANY MOVING PARTS You have
+      type: string
+    - name: text_005
+      label: Text · 01 / TOO MANY MOVING PARTS
+      type: text
+    - name: text_006
+      label: Heading · You have a team.
+      type: text
+    - name: text_007
+      label: Text · You need a shared direction.
+      type: text
+    - name: text_008
+      label: Text · I connect the brief, contributors, and dependencies so the work h
+      type: text
+    - name: text_009
+      label: Text · Bring structure to delivery ↗
+      type: text
+    - name: link_010
+      label: Link destination · 02 / TOO MANY CONVERSATIONS Everyon
+      type: string
+    - name: text_011
+      label: Text · 02 / TOO MANY CONVERSATIONS
+      type: text
+    - name: text_012
+      label: Heading · Everyone has feedback.
+      type: text
+    - name: text_013
+      label: Text · Who has the decision?
+      type: text
+    - name: text_014
+      label: Text · I turn scattered conversations into clear updates, review request
+      type: text
+    - name: text_015
+      label: Text · Make communication useful ↗
+      type: text
+    - name: link_016
+      label: 'Link destination · 03 / TOO MUCH CONTEXT IN YOUR HEAD '
+      type: string
+    - name: text_017
+      label: Text · 03 / TOO MUCH CONTEXT IN YOUR HEAD
+      type: text
+    - name: text_018
+      label: Heading · The work is moving.
+      type: text
+    - name: text_019
+      label: Text · The system should keep up.
+      type: text
+    - name: text_020
+      label: Text · I organize trackers and handovers so people can find the latest w
+      type: text
+    - name: text_021
+      label: Text · See the systems behind the work ↗
+      type: text
+  - name: section_04
+    label: section work-section
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: link_001
+      label: Link destination · 01 / CREATIVE DELIVERY From a movin
+      type: string
+    - name: text_002
+      label: Text · 01 /
+      type: text
+    - name: text_003
+      label: Text · CREATIVE DELIVERY
+      type: text
+    - name: text_004
+      label: Heading · From a moving brief
+      type: text
+    - name: text_005
+      label: Text · to a shared direction.
+      type: text
+    - name: text_006
+      label: Text · Brand, web, video & motion · Project coordination
+      type: text
+    - name: text_007
+      label: Text · ↗
+      type: text
+    - name: link_008
+      label: Link destination · 02 / COMMUNICATIONS The right infor
+      type: string
+    - name: text_009
+      label: Text · 02 /
+      type: text
+    - name: text_010
+      label: Text · COMMUNICATIONS
+      type: text
+    - name: text_011
+      label: Heading · The right information.
+      type: text
+    - name: text_012
+      label: Text · The next clear move.
+      type: text
+    - name: text_013
+      label: Text · Client communication · Reviews · Decision records
+      type: text
+    - name: text_014
+      label: Text · ↗
+      type: text
+    - name: link_015
+      label: Link destination · 03 / PROJECT OPERATIONS Systems tha
+      type: string
+    - name: text_016
+      label: Text · 03 /
+      type: text
+    - name: text_017
+      label: Text · PROJECT OPERATIONS
+      type: text
+    - name: text_018
+      label: Heading · Systems that keep
+      type: text
+    - name: text_019
+      label: Text · good work moving.
+      type: text
+    - name: text_020
+      label: Text · Trackers · Team rhythms · Handover systems
+      type: text
+    - name: text_021
+      label: Text · + + +
+      type: text
+    - name: text_022
+      label: Text · + + +
+      type: text
+    - name: text_023
+      label: Text · + + +
+      type: text
+    - name: text_024
+      label: Text · ↗
+      type: text
+    - name: text_025
+      label: Text · Explore the project examples above for the context behind these w
+      type: text
+  - name: section_05
+    label: Different tools. One clearer way forward.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE TOOLBOX / CHOOSE WHAT THE WORK NEEDS
+      type: text
+    - name: text_002
+      label: Heading · Different tools.
+      type: text
+    - name: text_003
+      label: Text · One clearer way forward.
+      type: text
+    - name: text_004
+      label: Text · A broad directory of tools used across project and product teams,
+      type: text
+    - name: text_005
+      label: Text · TOOLS IN MY CURRENT WORK
+      type: text
+    - name: text_006
+      label: 'Text · Notion · Slack · Figma · Google Docs · Canva · Fathom · Framer · '
+      type: text
+    - name: text_007
+      label: 'Text · The wider directory below shows options for different workflows; '
+      type: text
+    - name: text_008
+      label: Text · 01 / Planning & delivery
+      type: text
+    - name: text_009
+      label: Text · +
+      type: text
+    - name: text_010
+      label: Text · Trello
+      type: text
+    - name: text_011
+      label: Text · ClickUp
+      type: text
+    - name: text_012
+      label: Text · Asana
+      type: text
+    - name: text_013
+      label: Text · Jira
+      type: text
+    - name: text_014
+      label: Text · Monday.com
+      type: text
+    - name: text_015
+      label: Text · Linear
+      type: text
+    - name: text_016
+      label: Text · Basecamp
+      type: text
+    - name: text_017
+      label: Text · Wrike
+      type: text
+    - name: text_018
+      label: Text · Smartsheet
+      type: text
+    - name: text_019
+      label: Text · Microsoft Project
+      type: text
+    - name: text_020
+      label: Text · 02 / Documentation & knowledge
+      type: text
+    - name: text_021
+      label: Text · +
+      type: text
+    - name: text_022
+      label: Text · Notion
+      type: text
+    - name: text_023
+      label: Text · Google Docs
+      type: text
+    - name: text_024
+      label: Text · Confluence
+      type: text
+    - name: text_025
+      label: Text · Coda
+      type: text
+    - name: text_026
+      label: Text · Slite
+      type: text
+    - name: text_027
+      label: Text · 03 / Communication & meetings
+      type: text
+    - name: text_028
+      label: Text · +
+      type: text
+    - name: text_029
+      label: Text · Slack
+      type: text
+    - name: text_030
+      label: Text · Microsoft Teams
+      type: text
+    - name: text_031
+      label: Text · Zoom
+      type: text
+    - name: text_032
+      label: Text · Google Meet
+      type: text
+    - name: text_033
+      label: Text · Loom
+      type: text
+    - name: text_034
+      label: Text · Fathom
+      type: text
+    - name: text_035
+      label: Text · Miro
+      type: text
+    - name: text_036
+      label: Text · FigJam
+      type: text
+    - name: text_037
+      label: Text · 04 / Design & prototyping
+      type: text
+    - name: text_038
+      label: Text · +
+      type: text
+    - name: text_039
+      label: Text · Figma
+      type: text
+    - name: text_040
+      label: Text · Canva
+      type: text
+    - name: text_041
+      label: Text · Framer
+      type: text
+    - name: text_042
+      label: Text · Balsamiq
+      type: text
+    - name: text_043
+      label: Text · Whimsical
+      type: text
+    - name: text_044
+      label: Text · Lucidchart
+      type: text
+    - name: text_045
+      label: Text · 05 / Research & feedback
+      type: text
+    - name: text_046
+      label: Text · +
+      type: text
+    - name: text_047
+      label: Text · Dovetail
+      type: text
+    - name: text_048
+      label: Text · Typeform
+      type: text
+    - name: text_049
+      label: Text · Google Forms
+      type: text
+    - name: text_050
+      label: Text · UserTesting
+      type: text
+    - name: text_051
+      label: Text · Maze
+      type: text
+    - name: text_052
+      label: Text · Hotjar
+      type: text
+    - name: text_053
+      label: Text · 06 / Data & product analytics
+      type: text
+    - name: text_054
+      label: Text · +
+      type: text
+    - name: text_055
+      label: Text · Google Sheets
+      type: text
+    - name: text_056
+      label: Text · Microsoft Excel
+      type: text
+    - name: text_057
+      label: Text · Airtable
+      type: text
+    - name: text_058
+      label: Text · Google Analytics
+      type: text
+    - name: text_059
+      label: Text · Mixpanel
+      type: text
+    - name: text_060
+      label: Text · Amplitude
+      type: text
+    - name: text_061
+      label: Text · Looker Studio
+      type: text
+    - name: text_062
+      label: Text · 07 / Roadmaps & prioritization
+      type: text
+    - name: text_063
+      label: Text · +
+      type: text
+    - name: text_064
+      label: Text · Productboard
+      type: text
+    - name: text_065
+      label: Text · Aha!
+      type: text
+    - name: text_066
+      label: Text · Mural
+      type: text
+    - name: text_067
+      label: Text · airfocus
+      type: text
+    - name: text_068
+      label: Text · 08 / Automation & collaboration
+      type: text
+    - name: text_069
+      label: Text · +
+      type: text
+    - name: text_070
+      label: Text · Zapier
+      type: text
+    - name: text_071
+      label: Text · Make
+      type: text
+    - name: text_072
+      label: Text · GitHub
+      type: text
+    - name: text_073
+      label: Text · GitLab
+      type: text
+    - name: text_074
+      label: Text · Replit
+      type: text
+  - name: section_06
+    label: The plan has a backstory.
+    type: object
+    fields:
+    - name: visible
+      label: Show this section
+      type: boolean
+    - name: text_001
+      label: Text · THE SKETCH DESK / A LOOK INSIDE MY THINKING
+      type: text
+    - name: text_002
+      label: Heading · The plan has
+      type: text
+    - name: text_003
+      label: Text · a backstory.
+      type: text
+    - name: text_004
+      label: Text · Before the tracker, there’s a question. Before the roadmap, a rou
+      type: text
+    - name: text_005
+      label: Text · Open my sketch decks ↗
+      type: text
+    - name: link_006
+      label: 'Link destination · '
+      type: string
+    - name: text_007
+      label: Text · Illustrative roadmaps & working notes.
+      type: text
+    - name: link_008
+      label: Link destination · first, ask why? rough plan → next m
+      type: string
+    - name: text_009
+      label: Text · first, ask
+      type: text
+    - name: text_010
+      label: Text · why?
+      type: text
+    - name: text_011
+      label: Text · rough plan
+      type: text
+    - name: text_012
+      label: Text · → next move
+      type: text
+    - name: text_013
+      label: Text · → clearer path
+      type: text
+    - name: text_014
+      label: Text · work in
+      type: text
+    - name: text_015
+      label: Text · progress.
+      type: text
+    - name: text_016
+      label: Text · ✳
+      type: text
+    - name: text_017
+      label: Text · 08 DECKS / 40 SKETCHES ↗
+      type: text
