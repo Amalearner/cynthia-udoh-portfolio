@@ -1,0 +1,60 @@
+{
+  "title": "The 5-line update people actually read. — Cynthia Udoh",
+  "description": "A repeatable structure for progress, decisions, risks, and the next move. A practical project management field note by Cynthia Udoh.",
+  "section_01": {
+    "visible": true,
+    "text_001": "← Browse all 10 field notes",
+    "link_002": "./notes.html",
+    "text_003": "COMMUNICATIONS / FIELD NOTE 04",
+    "text_004": "The 5-line update people actually read.",
+    "text_005": "A repeatable structure for progress, decisions, risks, and the next move.",
+    "text_006": "Cynthia Udoh · 2 min read · Portfolio editorial draft",
+    "text_007": "LET’S MOVE THIS FORWARD.",
+    "text_008": "FIELD NOTE / 04",
+    "text_009": "THE PRACTICE OF MOVING WORK FORWARD"
+  },
+  "section_02": {
+    "visible": true,
+    "text_001": "IN THIS NOTE",
+    "link_002": "#section-1",
+    "text_003": "01",
+    "text_004": " 01 / Lead with what changed.",
+    "link_005": "#section-2",
+    "text_006": "02",
+    "text_007": " 02 / Make the consequence clear.",
+    "link_008": "#section-3",
+    "text_009": "03",
+    "text_010": " 03 / Name the next action.",
+    "link_011": "#section-4",
+    "text_012": "04",
+    "text_013": " 04 / Surface the decision or risk.",
+    "link_014": "#section-5",
+    "text_015": "05",
+    "text_016": " 05 / Link the source of truth."
+  },
+  "section_03": {
+    "visible": true,
+    "text_001": "01 / Lead with what changed.",
+    "text_002": "An update earns attention when it tells the reader something new. Start with the meaningful change since the last review: a direction has been approved, a deliverable is ready, or a dependency has shifted. Avoid opening with a list of meetings attended. Activity can explain progress, but it cannot stand in for it.",
+    "text_003": "02 / Make the consequence clear.",
+    "text_004": "Explain why the change matters to the project. A revised headline may require another design pass. An approved page may release the next stage of development. Connecting a change to its consequence gives the reader context for the decision you are about to ask them to make.",
+    "text_005": "03 / Name the next action.",
+    "text_006": "Use a verb, an owner, and an output. “Design to review” leaves too much room for interpretation. “Project lead to consolidate homepage comments into the review document” is easier to act on. Add a date only when it has been agreed, and distinguish a proposed deadline from a committed one.",
+    "text_007": "04 / Surface the decision or risk.",
+    "text_008": "If progress depends on a missing input, say so directly. Describe the dependency and the choice needed to resolve it. Keep the tone calm and factual. A useful update gives the team time to respond; it does not wait until the deadline is missed to explain what was blocking the work.",
+    "text_009": "05 / Link the source of truth.",
+    "text_010": "Finish with the current file or task. Link to the exact place a reader needs to review, rather than a folder full of versions. The update can stay short because the supporting detail has a clear home. Before sending, ask whether someone can act without asking you where the work is.",
+    "text_011": "PUT IT TO WORK",
+    "text_012": "Choose one idea from this note and apply it to the next brief, update, or handover you prepare.",
+    "text_013": "Talk through a project with me ↗",
+    "link_014": "./contact.html"
+  },
+  "section_04": {
+    "visible": true,
+    "text_001": "KEEP THE THREAD GOING / NOTE 05",
+    "link_002": "./six-statuses-that-tell-the-truth.html",
+    "text_003": "6 project statuses. Zero guesswork. ↗",
+    "text_004": "Browse all 10 notes",
+    "link_005": "./notes.html"
+  }
+}
