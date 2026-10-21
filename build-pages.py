@@ -61,7 +61,7 @@ def build():
  decks=[]
  for item in interactions['decks']:
   if not item['slides']:raise ValueError('Each notebook needs at least one sketch.')
-  deck={k:js_string(item[k]) for k in ['title','label']};deck['slides']=[]
+  deck={k:item[k] for k in ['title','label']};deck['slides']=[]
   for itemSlide in item['slides']:
    slide={k:js_string(itemSlide.get(k,'')) for k in ['tag','title','note','footer']}
    if itemSlide.get('cards'):slide['cards']=[[js_string(c['label']),js_string(c['text'])] for c in itemSlide['cards']]

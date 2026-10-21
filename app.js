@@ -16,3 +16,5 @@ const progress=document.querySelector('.reading-progress');let progressFrame=fal
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){toggle.click();toggle.focus()}});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(nav.classList.contains('open'))toggle.click()}));
 tabs.forEach(b=>b.addEventListener('click',()=>{panel.classList.remove('updated');void panel.offsetWidth;panel.classList.add('updated')}));
 if('IntersectionObserver' in window&&!paused){const extra=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('reveal');extra.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.number-grid>a,.fit-grid>a,.experience-row,.contact-options>a,.reading h2,.faq-section details').forEach(el=>extra.observe(el))}
+
+if(tabs.length&&panel)selectStage(0);

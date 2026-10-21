@@ -32,4 +32,4 @@ In the repository, choose **Settings → Pages → Build and deployment → Sour
 
 The design is in templates.json. Editable content lives in content/. The build script uses Python's standard library and renders the site into _site/. The workflow publishes only that generated output. There are no passwords, API keys or CMS secrets in this repository.
 
-The original portrait is preserved inside assets/cynthia.svg as an embedded image. You can replace it with an uploaded JPG, PNG or WebP through the image fields.
+The original portrait is in assets/cynthia.jpg. You can replace it with an uploaded JPG, PNG or WebP through the image fields.
